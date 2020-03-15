@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        html,body{
+            background: #2e3254;
+            height: 100%;
+        }
+        .menu-list{
+            height: 100%;
+            padding-top:20px;
+            font-size:18px;
+        }
+        .menu-list ul{
+            list-style: none;
+            padding:0;
+            margin:0 auto;
+        }
+        .menu-list ul li{
+            text-align:left;
+            color: #616c82;
+        }
+        .menu-list ul li.first-menu{
+            overflow: hidden;
+
+        }
+        .menu-list ul li:HOVER>a{
+            color: #007FC8;
+        }
+        .menu-list ul li a{
+            display:block;
+            padding:16px 0;
+            color: #5f78a2;
+            text-decoration:none;
+        }
+        .menu-list ul li.first-menu>a{
+            padding-left: 15px;
+        }
+        .menu-list ul li.first-menu.active>a{
+            color: #1c9dff;
+            vertical-align: middle;
+        }
+        .menu-list ul li.first-menu.active ul li.second-menu.current a{
+            background-color: #4d527c;
+            font-size: 18px;
+        }
+        .menu-list ul li.first-menu ul{
+            display:none;
+        }
+        .menu-list ul li.first-menu ul li.second-menu a{
+            padding: 12px 0 12px 31px;
+            font-size:16px;
+            color: #8aa3cd;
+        }
+    </style>
+    <title></title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+
+</head>
+<body>
+<div class="menu-list">
+    <ul>
+        <li class="first-menu" style="font-size:25px;text-align:center;" >
+            <a href="javascript:;">医疗知识图谱首页</a>
+        </li>
+        <li class="first-menu">
+            <a href="javascript:;">疾病</a>
+            <ul>
+                <li class="second-menu"><a href="/deal_request?name=双相情感障碍&id=1" id="1">双相情感障碍</a></li>
+                <li class="second-menu"><a href="/deal_request?name=躁狂抑郁症&id=2" id="2">躁狂抑郁症</a></li>
+                <li class="second-menu"><a href="/deal_request?name=抑郁性神经症&id=3" id="3">抑郁性神经症</a></li>
+                <li class="second-menu"><a href="/deal_request?name=产后精神抑郁&id=4" id="4">产后精神抑郁</a></li>
+                <li class="second-menu"><a href="/deal_request?name=经前心境恶劣障碍&id=5" id="5">经前心境恶劣障碍</a></li>
+                <li class="second-menu"><a href="/deal_request?name=情感性心境障碍&id=6" id="6">情感性心境障碍</a></li>
+                <li class="second-menu"><a href="/deal_request?name=内源性抑郁症&id=7" id="7">内源性抑郁症</a></li>
+                <li class="second-menu"><a href="/deal_request?name=反复发作抑郁症&id=8" id="8">反复发作抑郁症</a></li>
+                <li class="second-menu"><a href="/deal_request?name=抑郁心境的适应性障碍&id=9" id="9">抑郁心境的适应性障碍</a></li>
+                <li class="second-menu"><a href="/deal_request?name=焦虑性抑郁症&id=10" id="10">焦虑性抑郁症</a></li>
+                <li class="second-menu"><a href="/deal_request?name=老年期抑郁症&id=11" id="11">老年期抑郁症</a></li>
+                <li class="second-menu"><a href="/deal_request?name=适应障碍性抑郁&id=12" id="12">适应障碍性抑郁</a></li>
+                <li class="second-menu"><a href="/deal_request?name=绝经与抑郁症&id=13" id="13">绝经与抑郁症</a></li>
+                <li class="second-menu"><a href="/deal_request?name=躁狂症&id=14" id="14">躁狂症</a></li>
+                <li class="second-menu"><a href="/deal_request?name=急性抑郁症&id=15" id="15">急性抑郁症</a></li>
+                <li class="second-menu"><a href="/deal_request?name=抑郁障碍&id=16" id="16">抑郁障碍</a></li>
+                <li class="second-menu"><a href="/deal_request?name=心境障碍&id=17" id="17">心境障碍</a></li>
+                <li class="second-menu"><a href="/deal_request?name=抑郁症&id=18" id="18">抑郁症</a></li>
+                <li class="second-menu"><a href="/deal_request?name=反应性抑郁&id=19" id="19">反应性抑郁</a></li>
+                <li class="second-menu"><a href="/deal_request?name=产后抑郁&id=20" id="20">产后抑郁</a></li>
+            </ul>
+
+        </li>
+        <li class="first-menu">
+            <a href="javascript:;">药物</a>
+                <ul>
+                    <li class="second-menu"><a href="/deal_request?name=文法拉辛&id=21" id="21">文法拉辛</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=米安色林&id=22" id="22">米安色林</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=甲状腺片&id=23" id="23">甲状腺片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=氯丙嗪&id=24" id="24">氯丙嗪</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=吗氯贝胺&id=25" id="25">吗氯贝胺</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=米氮平&id=26" id="26">米氮平</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=黄体酮&id=27" id="27">黄体酮</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=盐酸多塞平片&id=28" id="28">盐酸多塞平片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=丙戊酸镁片&id=29" id="29">丙戊酸镁片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=结合雌激素&id=30" id="30">结合雌激素</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=萘普生钠注射液&id=31" id="31">萘普生钠注射液</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=阿普唑仑&id=32" id="32">阿普唑仑</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=螺内酯&id=33" id="33">螺内酯</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=多塞平&id=34" id="34">多塞平</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=纳曲酮&id=35" id="35">纳曲酮</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=氯氮平&id=36" id="36">氯氮平</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=盐酸度洛西汀肠溶胶囊&id=37" id="37">盐酸度洛西汀肠溶胶囊</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=阿米替林&id=38" id="38">阿米替林</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=文拉法辛&id=39" id="39">文拉法辛</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=甲睾酮&id=40" id="40">甲睾酮</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=妇宁康胶囊&id=41" id="41">妇宁康胶囊</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=氟西汀&id=42" id="42">氟西汀</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=雌二醇&id=43" id="43">雌二醇</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=利血平片&id=44" id="44">利血平片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=曲唑酮&id=45" id="45">曲唑酮</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=可待因桔梗片&id=46" id="46">可待因桔梗片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=复方吡拉西坦脑蛋白水解物片&id=47" id="47">复方吡拉西坦脑蛋白水解物片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=米非司酮&id=48" id="48">米非司酮</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=溴隐亭&id=49" id="49">溴隐亭</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=结合雌激素片&id=50" id="50">结合雌激素片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=甲羟孕酮&id=51" id="51">甲羟孕酮</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=舍曲林&id=52" id="52">舍曲林</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=奈法唑酮&id=53" id="53">奈法唑酮</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=氯氮平片&id=54" id="54">氯氮平片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=氟伏沙明&id=55" id="55">氟伏沙明</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=复方孕二烯酮片&id=56" id="56">复方孕二烯酮片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=谷维素片&id=57" id="57">谷维素片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=盐酸氯米帕明片&id=58" id="58">盐酸氯米帕明片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=西酞普兰&id=59" id="59">西酞普兰</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=腺苷钴胺片&id=60" id="60">腺苷钴胺片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=肾上腺素&id=61" id="61">肾上腺素</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=葡萄糖&id=62" id="62">葡萄糖</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=米帕明&id=63" id="63">米帕明</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=吗氯贝胺胶囊&id=64" id="64">吗氯贝胺胶囊</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=盐酸氟西汀胶囊&id=65" id="65">盐酸氟西汀胶囊</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=氯米帕明&id=66" id="66">氯米帕明</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=帕罗西汀&id=67" id="67">帕罗西汀</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=羟孕酮&id=68" id="68">羟孕酮</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=达那唑&id=69" id="69">达那唑</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=卡马西平胶囊&id=70" id="70">卡马西平胶囊</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=甲芬那酸&id=71" id="71">甲芬那酸</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=卡马西平片&id=72" id="72">卡马西平片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=盐酸帕罗西汀片&id=73" id="73">盐酸帕罗西汀片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=盐酸舍曲林片&id=74" id="74">盐酸舍曲林片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=洛沙平&id=75" id="75">洛沙平</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=盐酸塞利洛尔片&id=76" id="76">盐酸塞利洛尔片</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=去甲肾上腺素&id=77" id="77">去甲肾上腺素</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=马普替林&id=78" id="78">马普替林</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=丙米嗪&id=79" id="79">丙米嗪</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=氟哌啶醇&id=80" id="80">氟哌啶醇</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=噻奈普汀&id=81" id="81">噻奈普汀</a></li>
+                    <li class="second-menu"><a href="/deal_request?name=睾酮&id=82" id="82">睾酮</a></li>
+                </ul>
+
+        </li>
+        <li class="first-menu">
+            <a href="javascript:;">症状</a>
+                <ul>
+                <li class="second-menu"><a href="/deal_request?name=记忆力下降&id=83" id="83">记忆力下降</a></li>
+                <li class="second-menu"><a href="/deal_request?name=颤抖&id=84" id="84">颤抖</a></li>
+                <li class="second-menu"><a href="/deal_request?name=情绪低落&id=85" id="85">情绪低落</a></li>
+                <li class="second-menu"><a href="/deal_request?name=内向性思维&id=86" id="86">内向性思维</a></li>
+                <li class="second-menu"><a href="/deal_request?name=注意力集中困难或下降&id=87" id="87">注意力集中困难或下降</a></li>
+                <li class="second-menu"><a href="/deal_request?name=躁郁样&id=88" id="88">躁郁样</a></li>
+                <li class="second-menu"><a href="/deal_request?name=消沉&id=89" id="89">消沉</a></li>
+                <li class="second-menu"><a href="/deal_request?name=自伤&id=90" id="90">自伤</a></li>
+                <li class="second-menu"><a href="/deal_request?name=意志活动减退&id=91" id="91">意志活动减退</a></li>
+                <li class="second-menu"><a href="/deal_request?name=低血糖&id=92" id="92">低血糖</a></li>
+                <li class="second-menu"><a href="/deal_request?name=疲乏&id=93" id="93">疲乏</a></li>
+                <li class="second-menu"><a href="/deal_request?name=精神创伤&id=94" id="94">精神创伤</a></li>
+                <li class="second-menu"><a href="/deal_request?name=丧失兴趣&id=95" id="95">丧失兴趣</a></li>
+                <li class="second-menu"><a href="/deal_request?name=季节性情绪抑郁&id=96" id="96">季节性情绪抑郁</a></li>
+                <li class="second-menu"><a href="/deal_request?name=头痛&id=97" id="97">头痛</a></li>
+                <li class="second-menu"><a href="/deal_request?name=心境不良&id=98" id="98">心境不良</a></li>
+                <li class="second-menu"><a href="/deal_request?name=性欲减退&id=99" id="99">性欲减退</a></li>
+                <li class="second-menu"><a href="/deal_request?name=精力丧失&id=100" id="100">精力丧失</a></li>
+                <li class="second-menu"><a href="/deal_request?name=自我评价过低&id=101" id="101">自我评价过低</a></li>
+                <li class="second-menu"><a href="/deal_request?name=产后极端行为&id=102" id="102">产后极端行为</a></li>
+                <li class="second-menu"><a href="/deal_request?name=内疚&id=103" id="103">内疚</a></li>
+                <li class="second-menu"><a href="/deal_request?name=自杀&id=104" id="104">自杀</a></li>
+                <li class="second-menu"><a href="/deal_request?name=水潴留&id=105" id="105">水潴留</a></li>
+                <li class="second-menu"><a href="/deal_request?name=思虑伤脾&id=106" id="106">思虑伤脾</a></li>
+                <li class="second-menu"><a href="/deal_request?name=类偏狂&id=107" id="107">类偏狂</a></li>
+                <li class="second-menu"><a href="/deal_request?name=经前头痛&id=108" id="108">经前头痛</a></li>
+                <li class="second-menu"><a href="/deal_request?name=思维奔逸&id=109" id="109">思维奔逸</a></li>
+                <li class="second-menu"><a href="/deal_request?name=焦虑&id=110" id="110">焦虑</a></li>
+                <li class="second-menu"><a href="/deal_request?name=睡眠紊乱&id=111" id="111">睡眠紊乱</a></li>
+                <li class="second-menu"><a href="/deal_request?name=气郁体质&id=112" id="112">气郁体质</a></li>
+                <li class="second-menu"><a href="/deal_request?name=注意力下降&id=113" id="113">注意力下降</a></li>
+                <li class="second-menu"><a href="/deal_request?name=心境低落&id=114" id="114">心境低落</a></li>
+                <li class="second-menu"><a href="/deal_request?name=尿急&id=115" id="115">尿急</a></li>
+                <li class="second-menu"><a href="/deal_request?name=盆腔痛&id=116" id="116">盆腔痛</a></li>
+                <li class="second-menu"><a href="/deal_request?name=无用感&id=117" id="117">无用感</a></li>
+                <li class="second-menu"><a href="/deal_request?name=乐趣丧失&id=118" id="118">乐趣丧失</a></li>
+                <li class="second-menu"><a href="/deal_request?name=呼气困难&id=119" id="119">呼气困难</a></li>
+                <li class="second-menu"><a href="/deal_request?name=体重下降&id=120" id="120">体重下降</a></li>
+                <li class="second-menu"><a href="/deal_request?name=心境高涨&id=121" id="121">心境高涨</a></li>
+                <li class="second-menu"><a href="/deal_request?name=四肢痛&id=122" id="122">四肢痛</a></li>
+                <li class="second-menu"><a href="/deal_request?name=自责&id=123" id="123">自责</a></li>
+                <li class="second-menu"><a href="/deal_request?name=思维紊乱&id=124" id="124">思维紊乱</a></li>
+                <li class="second-menu"><a href="/deal_request?name=思维控制异常&id=125" id="125">思维控制异常</a></li>
+                <li class="second-menu"><a href="/deal_request?name=对生活丧失兴趣&id=126" id="126">对生活丧失兴趣</a></li>
+                <li class="second-menu"><a href="/deal_request?name=镇静药中毒&id=127" id="127">镇静药中毒</a></li>
+                <li class="second-menu"><a href="/deal_request?name=决断困难感&id=128" id="128">决断困难感</a></li>
+                <li class="second-menu"><a href="/deal_request?name=精神运动迟滞&id=129" id="129">精神运动迟滞</a></li>
+                <li class="second-menu"><a href="/deal_request?name=心情不畅&id=130" id="130">心情不畅</a></li>
+                <li class="second-menu"><a href="/deal_request?name=忧郁&id=131" id="131">忧郁</a></li>
+                <li class="second-menu"><a href="/deal_request?name=毫无情感反应&id=132" id="132">毫无情感反应</a></li>
+                <li class="second-menu"><a href="/deal_request?name=躁狂&id=133" id="133">躁狂</a></li>
+                <li class="second-menu"><a href="/deal_request?name=失眠&id=134" id="134">失眠</a></li>
+                <li class="second-menu"><a href="/deal_request?name=精力降低&id=135" id="135">精力降低</a></li>
+                <li class="second-menu"><a href="/deal_request?name=抑郁&id=136" id="136">抑郁</a></li>
+                <li class="second-menu"><a href="/deal_request?name=注意力不集中&id=137" id="137">注意力不集中</a></li>
+                <li class="second-menu"><a href="/deal_request?name=自信降低&id=138" id="138">自信降低</a></li>
+                <li class="second-menu"><a href="/deal_request?name=妄想&id=139" id="139">妄想</a></li>
+                <li class="second-menu"><a href="/deal_request?name=注意力降低&id=140" id="140">注意力降低</a></li>
+                <li class="second-menu"><a href="/deal_request?name=产褥期谵妄状态&id=141" id="141">产褥期谵妄状态</a></li>
+                <li class="second-menu"><a href="/deal_request?name=易激惹&id=142" id="142">易激惹</a></li>
+                <li class="second-menu"><a href="/deal_request?name=有自伤或自杀的观念或行为&id=143" id="143">有自伤或自杀的观念或行为</a></li>
+                <li class="second-menu"><a href="/deal_request?name=情绪起伏大&id=144" id="144">情绪起伏大</a></li>
+                <li class="second-menu"><a href="/deal_request?name=内疚感&id=145" id="145">内疚感</a></li>
+                <li class="second-menu"><a href="/deal_request?name=心理老化&id=146" id="146">心理老化</a></li>
+                <li class="second-menu"><a href="/deal_request?name=乳房胀痛&id=147" id="147">乳房胀痛</a></li>
+                <li class="second-menu"><a href="/deal_request?name=思维迟缓&id=148" id="148">思维迟缓</a></li>
+                <li class="second-menu"><a href="/deal_request?name=意识朦胧状态&id=149" id="149">意识朦胧状态</a></li>
+                <li class="second-menu"><a href="/deal_request?name=健忘&id=150" id="150">健忘</a></li>
+                <li class="second-menu"><a href="/deal_request?name=自罪观念&id=151" id="151">自罪观念</a></li>
+                <li class="second-menu"><a href="/deal_request?name=思考困难感&id=152" id="152">思考困难感</a></li>
+                <li class="second-menu"><a href="/deal_request?name=睡眠障碍&id=153" id="153">睡眠障碍</a></li>
+                <li class="second-menu"><a href="/deal_request?name=食欲减退&id=154" id="154">食欲减退</a></li>
+                <li class="second-menu"><a href="/deal_request?name=食欲紊乱&id=155" id="155">食欲紊乱</a></li>
+                <li class="second-menu"><a href="/deal_request?name=暴力冲动行为&id=156" id="156">暴力冲动行为</a></li>
+                <li class="second-menu"><a href="/deal_request?name=情感低落&id=157" id="157">情感低落</a></li>
+                <li class="second-menu"><a href="/deal_request?name=幻觉&id=158" id="158">幻觉</a></li>
+                <li class="second-menu"><a href="/deal_request?name=病理性纵火&id=159" id="159">病理性纵火</a></li>
+                <li class="second-menu"><a href="/deal_request?name=控制不住的联想&id=160" id="160">控制不住的联想</a></li>
+                <li class="second-menu"><a href="/deal_request?name=猜疑&id=161" id="161">猜疑</a></li>
+                <li class="second-menu"><a href="/deal_request?name=进食障碍&id=162" id="162">进食障碍</a></li>
+                <li class="second-menu"><a href="/deal_request?name=精神障碍&id=163" id="163">精神障碍</a></li>
+                <li class="second-menu"><a href="/deal_request?name=尿频&id=164" id="164">尿频</a></li>
+                <li class="second-menu"><a href="/deal_request?name=产褥期幻觉妄想状态&id=165" id="165">产褥期幻觉妄想状态</a></li>
+                <li class="second-menu"><a href="/deal_request?name=哭笑失常&id=166" id="166">哭笑失常</a></li>
+                <li class="second-menu"><a href="/deal_request?name=攻击行为&id=167" id="167">攻击行为</a></li>
+                <li class="second-menu"><a href="/deal_request?name=沮丧&id=168" id="168">沮丧</a></li>
+                <li class="second-menu"><a href="/deal_request?name=食欲下降&id=169" id="169">食欲下降</a></li>
+                <li class="second-menu"><a href="/deal_request?name=无价值感&id=170" id="170">无价值感</a></li>
+                <li class="second-menu"><a href="/deal_request?name=兴趣缺乏&id=171" id="171">兴趣缺乏</a></li>
+                <li class="second-menu"><a href="/deal_request?name=便秘&id=172" id="172">便秘</a></li>
+                <li class="second-menu"><a href="/deal_request?name=产褥期躁狂状态&id=173" id="173">产褥期躁狂状态</a></li>
+                <li class="second-menu"><a href="/deal_request?name=头晕&id=174" id="174">头晕</a></li>
+                <li class="second-menu"><a href="/deal_request?name=精力下降&id=175" id="175">精力下降</a></li>
+                <li class="second-menu"><a href="/deal_request?name=腹泻&id=176" id="176">腹泻</a></li>
+                <li class="second-menu"><a href="/deal_request?name=违拗症&id=177" id="177">违拗症</a></li>
+                <li class="second-menu"><a href="/deal_request?name=行为及情绪异常&id=178" id="178">行为及情绪异常</a></li>
+                <li class="second-menu"><a href="/deal_request?name=肠痉挛&id=179" id="179">肠痉挛</a></li>
+                <li class="second-menu"><a href="/deal_request?name=自我残伤行为&id=180" id="180">自我残伤行为</a></li>
+                <li class="second-menu"><a href="/deal_request?name=自卑&id=181" id="181">自卑</a></li>
+                <li class="second-menu"><a href="/deal_request?name=体重减轻&id=182" id="182">体重减轻</a></li>
+                <li class="second-menu"><a href="/deal_request?name=背痛&id=183" id="183">背痛</a></li>
+                <li class="second-menu"><a href="/deal_request?name=病理性偷窃&id=184" id="184">病理性偷窃</a></li>
+                </ul>
+
+        </li>
+
+    </ul>
+</div>
+</body>
+</html>
+<script >
+     $(".menu-list .first-menu").click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+            $(this).find("ul").slideToggle(500);
+            $(this).siblings().find("ul").hide();
+        })
+      $(".menu-list .second-menu").click(function(){
+        var $this = $(this);
+        $(".second-menu").each(function () {
+            if($(this).hasClass("current")){
+                $(this).removeClass("current");
+            }
+        })
+        $this.addClass("current").siblings().removeClass("current");
+        })
+                //  阻止事件冒泡
+        $(".menu-list .first-menu ul").bind("click",function(event){
+            event.stopPropagation();
+        })
+     </script>

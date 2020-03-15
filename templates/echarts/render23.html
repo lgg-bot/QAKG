@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="a4a0229f97564a849487e1cc98319f73" class="chart-container" style="width:100%; height:700px;"></div>
+    <script>
+        var chart_a4a0229f97564a849487e1cc98319f73 = echarts.init(
+            document.getElementById('a4a0229f97564a849487e1cc98319f73'), 'white', {renderer: 'canvas'});
+        var option_a4a0229f97564a849487e1cc98319f73 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 2500,
+                "edgeLength": 50,
+                "gravity": 0.2
+            },
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "formatter": function (x) { var strs = x.data.name;   var n='';    var str='centernode';   if(strs.search(str)!=-1) {return  n;}   var strs = x.data.name;  if(strs.length<=6){                       return strs;                   }else {                       name = strs.slice(0,6) + '...';                        return name;                   }}
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": true,
+            "focusNodeAdjacency": "true",
+            "data": [
+                {
+                    "name": "\u7532\u72b6\u817a\u7247",
+                    "des": "\u7532\u72b6\u817a\u7247",
+                    "category": 1,
+                    "symbolSize": 90
+                },
+                {
+                    "name": "cure_disease|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "forbid|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "attention|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "uneffect|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "use|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "1.\u6210\u4eba\u5e38\u7528\u91cf\n\u53e3\u670d\uff0c\u5f00\u59cb\u4e3a\u6bce\u65e510\uff5e20mg\uff0c\u9010\u6e10\u589e\u52a0\uff0c\u7ef4\u6301\u91cf\u4e00\u822c\u4e3a\u6bcf\u65e540~120mg\uff0c\u5c11\u6570\u75c5\u4eba\u9700\u6bce\u65e5160mg\u3002\n2.\u5a74\u513f\u53ca\u513f\u7ae5\u5b8c\u5168\u66ff\u4ee3\u91cf\n1\u5c81\u4ee5\u51858\uff5e15mg\uff1b 1\uff5e2\u5c8120\uff5e45mg\uff1b2~7\u5c8145\uff5e60mg\uff1b7\u5c81\u4ee5\u4e0a\n60\uff5e 120mg\u3002\u5f00\u59cb\u5242\u91cf\u5e94\u4e3a\u5b8c\u5168\u66ff\u4ee3\u5242\u91cf\u76841/3\uff0c\u9010\u6e10\u52a0\u91cf\u3002\u7531\u4e8e\u672c\u54c1T3\u3001\nT4\u7684\u542b\u91cf\u53ca\u4e24\u8005\u6bd4\u4f8b\u4e0d\u6052\u5b9a\uff0c\u5728\u6cbb\u7597\u4e2d\u5e94\u6839\u636e\u4e34\u5e8a\u75c7\u72b6\u53caT3\u3001T4\u3001TSH\u68c0\u67fb\u8c03\u6574\u5242\u91cf\u3002",
+                    "des": "1.\u6210\u4eba\u5e38\u7528\u91cf\n\u53e3\u670d\uff0c\u5f00\u59cb\u4e3a\u6bce\u65e510\uff5e20mg\uff0c\u9010\u6e10\u589e\u52a0\uff0c\u7ef4\u6301\u91cf\u4e00\u822c\u4e3a\u6bcf\u65e540~120mg\uff0c\u5c11\u6570\u75c5\u4eba\u9700\u6bce\u65e5160mg\u3002\n2.\u5a74\u513f\u53ca\u513f\u7ae5\u5b8c\u5168\u66ff\u4ee3\u91cf\n1\u5c81\u4ee5\u51858\uff5e15mg\uff1b 1\uff5e2\u5c8120\uff5e45mg\uff1b2~7\u5c8145\uff5e60mg\uff1b7\u5c81\u4ee5\u4e0a\n60\uff5e 120mg\u3002\u5f00\u59cb\u5242\u91cf\u5e94\u4e3a\u5b8c\u5168\u66ff\u4ee3\u5242\u91cf\u76841/3\uff0c\u9010\u6e10\u52a0\u91cf\u3002\u7531\u4e8e\u672c\u54c1T3\u3001\nT4\u7684\u542b\u91cf\u53ca\u4e24\u8005\u6bd4\u4f8b\u4e0d\u6052\u5b9a\uff0c\u5728\u6cbb\u7597\u4e2d\u5e94\u6839\u636e\u4e34\u5e8a\u75c7\u72b6\u53caT3\u3001T4\u3001TSH\u68c0\u67fb\u8c03\u6574\u5242\u91cf\u3002",
+                    "category": 6,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u7532\u72b6\u817a\u7247\u5982\u7528\u91cf\u9002\u5f53\u65e0\u4efb\u4f55\u4e0d\u826f\u53cd\u5e94\u3002\u4f7f\u7528\u8fc7\u91cf\u5247\u5f15\u8d77\u5fc3 \u52a8\u8fc7\u901f\u3001\u5fc3\u60ee\u3001\u5fc3\u7ede\u75db\u3001\u5fc3\u5f8b\u5931\u5e38\u3001\u5934\u75db\u3001\u795e\u7ecf\u8d28\u3001\u5174\u594b\u3001\u4e0d\u5b89\u3001\u5931\u7720\u3001 \u9aa8\n\u80f3\u808c\u75c9\u631b\u3001\u808c\u65e0\u529b\u3001\u9707\u98a4\u3001\u51fa\u6c57\u3001\u6f6e\u7ea2\u3001\u6015\u70ed\u3001\u8179\u6cfb\u3001\u5455\u5410\u3001\u4f53\u91cd\u51cf\u8f7b\u7b49\u7c7b\u4f3c\u7532\u72b6\u817a\u529f\u80fd\u4ea2\u8fdb\u75c7\u7684\u75c7\u72b6\u3002\u51cf\u91cf\u6216\u505c\u836f\u53ef\u4f7f\u6240\u6709\u75c7\u72b6\u6d88\u5931\u3002",
+                    "des": "\u7532\u72b6\u817a\u7247\u5982\u7528\u91cf\u9002\u5f53\u65e0\u4efb\u4f55\u4e0d\u826f\u53cd\u5e94\u3002\u4f7f\u7528\u8fc7\u91cf\u5247\u5f15\u8d77\u5fc3 \u52a8\u8fc7\u901f\u3001\u5fc3\u60ee\u3001\u5fc3\u7ede\u75db\u3001\u5fc3\u5f8b\u5931\u5e38\u3001\u5934\u75db\u3001\u795e\u7ecf\u8d28\u3001\u5174\u594b\u3001\u4e0d\u5b89\u3001\u5931\u7720\u3001 \u9aa8\n\u80f3\u808c\u75c9\u631b\u3001\u808c\u65e0\u529b\u3001\u9707\u98a4\u3001\u51fa\u6c57\u3001\u6f6e\u7ea2\u3001\u6015\u70ed\u3001\u8179\u6cfb\u3001\u5455\u5410\u3001\u4f53\u91cd\u51cf\u8f7b\u7b49\u7c7b\u4f3c\u7532\u72b6\u817a\u529f\u80fd\u4ea2\u8fdb\u75c7\u7684\u75c7\u72b6\u3002\u51cf\u91cf\u6216\u505c\u836f\u53ef\u4f7f\u6240\u6709\u75c7\u72b6\u6d88\u5931\u3002",
+                    "category": 5,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u5fc3\u7ede\u75db\u3001\u51a0\u5fc3\u75c5\u548c\u5feb\u901f\u578b\u5fc3\u5f8b\u5931\u5e38\u8005\u7981\u7528\u3002",
+                    "des": "\u5fc3\u7ede\u75db\u3001\u51a0\u5fc3\u75c5\u548c\u5feb\u901f\u578b\u5fc3\u5f8b\u5931\u5e38\u8005\u7981\u7528\u3002",
+                    "category": 3,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u2474\u52a8\u8109\u786c\u5316\u3001\u5fc3\u529f\u80fd\u4e0d\u5168\u3001\u7cd6\u5c3f\u75c5\u3001\u9ad8\u8840\u538b\u60a3\u8005\u614e\u7528\u3002\n\u2475\u5bf9\u75c5\u7a0b\u957f\u3001\u75c5\u60c5\u91cd\u7684\u7532\u72b6\u817a\u529f\u80fd\u51cf\u9000\u75c7\u6216\u7c98\u6db2\u6027\u6c34\u80bf\u60a3\u8005\u4f7f\u7528\u672c\u7c7b \u836f\u5e94\u8c28\u614e\u5c0f\u5fc3\uff0c\u5f00\u59cb\u7528\u5c0f\u5242\u91cf\uff0c\u4ee5\u540e\u7f13\u6162\u589e\u52a0\u76f4\u81f3\u751f\u7406\u66ff\u4ee3\u5242\u91cf\u3002\n\u2476\u4f34\u6709\u5782\u4f53\u524d\u53f6\u529f\u80fd\u51cf\u9000\u75c7\u6216\u80be\u4e0a\u817a\u76ae\u8d28\u529f\u80fd\u4e0d\u5168\u60a3\u8005\u5e94\u5148\u670d\u7528\u7cd6\u76ae \u8d28\u7c7b\u56fa\u9187\u6fc0\u7d20\uff0c\u4fdf\u80be\u4e0a\u817a\u76ae\u8d28\u529f\u80fd\u6062\u590d\u6b63\u5e38\u540e\u518d\u7528\u672c\u7c7b\u836f\u3002",
+                    "des": "\u2474\u52a8\u8109\u786c\u5316\u3001\u5fc3\u529f\u80fd\u4e0d\u5168\u3001\u7cd6\u5c3f\u75c5\u3001\u9ad8\u8840\u538b\u60a3\u8005\u614e\u7528\u3002\n\u2475\u5bf9\u75c5\u7a0b\u957f\u3001\u75c5\u60c5\u91cd\u7684\u7532\u72b6\u817a\u529f\u80fd\u51cf\u9000\u75c7\u6216\u7c98\u6db2\u6027\u6c34\u80bf\u60a3\u8005\u4f7f\u7528\u672c\u7c7b \u836f\u5e94\u8c28\u614e\u5c0f\u5fc3\uff0c\u5f00\u59cb\u7528\u5c0f\u5242\u91cf\uff0c\u4ee5\u540e\u7f13\u6162\u589e\u52a0\u76f4\u81f3\u751f\u7406\u66ff\u4ee3\u5242\u91cf\u3002\n\u2476\u4f34\u6709\u5782\u4f53\u524d\u53f6\u529f\u80fd\u51cf\u9000\u75c7\u6216\u80be\u4e0a\u817a\u76ae\u8d28\u529f\u80fd\u4e0d\u5168\u60a3\u8005\u5e94\u5148\u670d\u7528\u7cd6\u76ae \u8d28\u7c7b\u56fa\u9187\u6fc0\u7d20\uff0c\u4fdf\u80be\u4e0a\u817a\u76ae\u8d28\u529f\u80fd\u6062\u590d\u6b63\u5e38\u540e\u518d\u7528\u672c\u7c7b\u836f\u3002",
+                    "category": 4,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u7ecf\u524d\u5fc3\u5883\u6076\u52a3\u969c\u788d",
+                    "des": "\u7ecf\u524d\u5fc3\u5883\u6076\u52a3\u969c\u788d",
+                    "category": 2,
+                    "symbolSize": 70
+                }
+            ],
+            "categories": [
+                {},
+                {
+                    "name": "drug"
+                },
+                {
+                    "name": "disease"
+                },
+                {
+                    "name": "forbid"
+                },
+                {
+                    "name": "attention"
+                },
+                {
+                    "name": "uneffect"
+                },
+                {
+                    "name": "use"
+                }
+            ],
+            "edgeLabel": {
+                "show": true,
+                "margin": 8,
+                "formatter": function (x) {return x.data.name;}
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": [
+                4,
+                10
+            ],
+            "links": [
+                {
+                    "source": "\u7532\u72b6\u817a\u7247",
+                    "target": "cure_disease|centernode",
+                    "name": "cure_disease"
+                },
+                {
+                    "source": "\u7532\u72b6\u817a\u7247",
+                    "target": "forbid|centernode",
+                    "name": "forbid"
+                },
+                {
+                    "source": "\u7532\u72b6\u817a\u7247",
+                    "target": "attention|centernode",
+                    "name": "attention"
+                },
+                {
+                    "source": "\u7532\u72b6\u817a\u7247",
+                    "target": "uneffect|centernode",
+                    "name": "uneffect"
+                },
+                {
+                    "source": "\u7532\u72b6\u817a\u7247",
+                    "target": "use|centernode",
+                    "name": "use"
+                },
+                {
+                    "source": "use|centernode",
+                    "target": "1.\u6210\u4eba\u5e38\u7528\u91cf\n\u53e3\u670d\uff0c\u5f00\u59cb\u4e3a\u6bce\u65e510\uff5e20mg\uff0c\u9010\u6e10\u589e\u52a0\uff0c\u7ef4\u6301\u91cf\u4e00\u822c\u4e3a\u6bcf\u65e540~120mg\uff0c\u5c11\u6570\u75c5\u4eba\u9700\u6bce\u65e5160mg\u3002\n2.\u5a74\u513f\u53ca\u513f\u7ae5\u5b8c\u5168\u66ff\u4ee3\u91cf\n1\u5c81\u4ee5\u51858\uff5e15mg\uff1b 1\uff5e2\u5c8120\uff5e45mg\uff1b2~7\u5c8145\uff5e60mg\uff1b7\u5c81\u4ee5\u4e0a\n60\uff5e 120mg\u3002\u5f00\u59cb\u5242\u91cf\u5e94\u4e3a\u5b8c\u5168\u66ff\u4ee3\u5242\u91cf\u76841/3\uff0c\u9010\u6e10\u52a0\u91cf\u3002\u7531\u4e8e\u672c\u54c1T3\u3001\nT4\u7684\u542b\u91cf\u53ca\u4e24\u8005\u6bd4\u4f8b\u4e0d\u6052\u5b9a\uff0c\u5728\u6cbb\u7597\u4e2d\u5e94\u6839\u636e\u4e34\u5e8a\u75c7\u72b6\u53caT3\u3001T4\u3001TSH\u68c0\u67fb\u8c03\u6574\u5242\u91cf\u3002",
+                    "name": " "
+                },
+                {
+                    "source": "uneffect|centernode",
+                    "target": "\u7532\u72b6\u817a\u7247\u5982\u7528\u91cf\u9002\u5f53\u65e0\u4efb\u4f55\u4e0d\u826f\u53cd\u5e94\u3002\u4f7f\u7528\u8fc7\u91cf\u5247\u5f15\u8d77\u5fc3 \u52a8\u8fc7\u901f\u3001\u5fc3\u60ee\u3001\u5fc3\u7ede\u75db\u3001\u5fc3\u5f8b\u5931\u5e38\u3001\u5934\u75db\u3001\u795e\u7ecf\u8d28\u3001\u5174\u594b\u3001\u4e0d\u5b89\u3001\u5931\u7720\u3001 \u9aa8\n\u80f3\u808c\u75c9\u631b\u3001\u808c\u65e0\u529b\u3001\u9707\u98a4\u3001\u51fa\u6c57\u3001\u6f6e\u7ea2\u3001\u6015\u70ed\u3001\u8179\u6cfb\u3001\u5455\u5410\u3001\u4f53\u91cd\u51cf\u8f7b\u7b49\u7c7b\u4f3c\u7532\u72b6\u817a\u529f\u80fd\u4ea2\u8fdb\u75c7\u7684\u75c7\u72b6\u3002\u51cf\u91cf\u6216\u505c\u836f\u53ef\u4f7f\u6240\u6709\u75c7\u72b6\u6d88\u5931\u3002",
+                    "name": " "
+                },
+                {
+                    "source": "forbid|centernode",
+                    "target": "\u5fc3\u7ede\u75db\u3001\u51a0\u5fc3\u75c5\u548c\u5feb\u901f\u578b\u5fc3\u5f8b\u5931\u5e38\u8005\u7981\u7528\u3002",
+                    "name": " "
+                },
+                {
+                    "source": "attention|centernode",
+                    "target": "\u2474\u52a8\u8109\u786c\u5316\u3001\u5fc3\u529f\u80fd\u4e0d\u5168\u3001\u7cd6\u5c3f\u75c5\u3001\u9ad8\u8840\u538b\u60a3\u8005\u614e\u7528\u3002\n\u2475\u5bf9\u75c5\u7a0b\u957f\u3001\u75c5\u60c5\u91cd\u7684\u7532\u72b6\u817a\u529f\u80fd\u51cf\u9000\u75c7\u6216\u7c98\u6db2\u6027\u6c34\u80bf\u60a3\u8005\u4f7f\u7528\u672c\u7c7b \u836f\u5e94\u8c28\u614e\u5c0f\u5fc3\uff0c\u5f00\u59cb\u7528\u5c0f\u5242\u91cf\uff0c\u4ee5\u540e\u7f13\u6162\u589e\u52a0\u76f4\u81f3\u751f\u7406\u66ff\u4ee3\u5242\u91cf\u3002\n\u2476\u4f34\u6709\u5782\u4f53\u524d\u53f6\u529f\u80fd\u51cf\u9000\u75c7\u6216\u80be\u4e0a\u817a\u76ae\u8d28\u529f\u80fd\u4e0d\u5168\u60a3\u8005\u5e94\u5148\u670d\u7528\u7cd6\u76ae \u8d28\u7c7b\u56fa\u9187\u6fc0\u7d20\uff0c\u4fdf\u80be\u4e0a\u817a\u76ae\u8d28\u529f\u80fd\u6062\u590d\u6b63\u5e38\u540e\u518d\u7528\u672c\u7c7b\u836f\u3002",
+                    "name": " "
+                },
+                {
+                    "source": "cure_disease|centernode",
+                    "target": "\u7ecf\u524d\u5fc3\u5883\u6076\u52a3\u969c\u788d",
+                    "name": " "
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "formatter": function (x) { if(x.dataType === 'edge'){return x.data.name;} var strs = x.data.des;  var str = ''; for(var i = 0, s; s = strs[i++];) { if(i==500){str+='...'; break;} str += s; if(!(i % 50)) str += '<br>'; } return str;},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "drug",
+                "disease",
+                "forbid",
+                "attention",
+                "uneffect",
+                "use"
+            ],
+            "selected": {
+                "": true,
+                "drug": true,
+                "disease": true,
+                "forbid": true,
+                "attention": true,
+                "uneffect": true,
+                "use": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u7532\u72b6\u817a\u7247\u76f8\u5173\u77e5\u8bc6\u56fe\u8c31",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_a4a0229f97564a849487e1cc98319f73.setOption(option_a4a0229f97564a849487e1cc98319f73);
+    </script>
+</body>
+</html>

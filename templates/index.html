@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html>
+<head>
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+<meta charset="utf-8">
+<title>医疗系统</title>
+<link href="style/body.css" rel="stylesheet" type="text/css" />
+<script src="style/jquery.min.js"></script>
+
+<script>
+$(function(){
+	$('.unit a').click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+	})
+})
+</script>
+</head>
+
+<body>
+<div id="bodybox">
+    <div id="header"></div>
+    <div class="clear"></div>
+    <table width="100%" id="theme">
+        <tr>
+            <td width="203" id="left" valign="top" height="740" bgcolor="#0190d4">
+                <div class="left">
+                    <div id="levelmenu">
+                    <div class="unit">
+                      <h5 style="font-size:25px;color: #4d527c;" >菜单</h5>
+                        <a href="index1.html" target="iframe" style="font-size:20px;" class= "on"><b>·</b> 医疗图谱</a>
+                      	<br>
+                        <br>
+                        <a href="index2.html" target="iframe" style="font-size:20px;" class="on"><b>·</b> 医疗问答</a>
+
+                    </div>
+                  </div>
+                </div>
+            </td>
+            <td class="right" valign="top">
+
+                <a href="index.html"  style="font-size:14px;display: block;text-align:right;">返回上一级</a>
+                <iframe class="J_iframe" name="iframe" src="index1.html" frameborder="0" style="min-height:715px;width:100%;height:100%;"></iframe>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

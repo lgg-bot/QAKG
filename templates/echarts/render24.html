@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="c97e06e53b5c466b83c9272348ccdee6" class="chart-container" style="width:100%; height:700px;"></div>
+    <script>
+        var chart_c97e06e53b5c466b83c9272348ccdee6 = echarts.init(
+            document.getElementById('c97e06e53b5c466b83c9272348ccdee6'), 'white', {renderer: 'canvas'});
+        var option_c97e06e53b5c466b83c9272348ccdee6 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 2500,
+                "edgeLength": 50,
+                "gravity": 0.2
+            },
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "formatter": function (x) { var strs = x.data.name;   var n='';    var str='centernode';   if(strs.search(str)!=-1) {return  n;}   var strs = x.data.name;  if(strs.length<=6){                       return strs;                   }else {                       name = strs.slice(0,6) + '...';                        return name;                   }}
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": true,
+            "focusNodeAdjacency": "true",
+            "data": [
+                {
+                    "name": "\u6c2f\u4e19\u55ea",
+                    "des": "\u6c2f\u4e19\u55ea",
+                    "category": 1,
+                    "symbolSize": 90
+                },
+                {
+                    "name": "attention|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "forbid|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "uneffect|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "cure_disease|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "use|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "\u7531\u4e8e\u5242\u578b\u53ca\u89c4\u683c\u4e0d\u540c\uff0c\u7528\u6cd5\u7528\u91cf\u8bf7\u4ed4\u7ec6\u9605\u8bfb\u836f\u54c1\u8bf4\u660e\u4e66\u6216\u9075\u533b\u5631\u3002",
+                    "des": "\u7531\u4e8e\u5242\u578b\u53ca\u89c4\u683c\u4e0d\u540c\uff0c\u7528\u6cd5\u7528\u91cf\u8bf7\u4ed4\u7ec6\u9605\u8bfb\u836f\u54c1\u8bf4\u660e\u4e66\u6216\u9075\u533b\u5631\u3002",
+                    "category": 6,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u2460\u4e3b\u8981\u4e0d\u826f\u53cd\u5e94\u6709\u53e3\u5e72\u3001\u89c6\u7269\u4e0d\u6e05\u3001\u4e0a\u8179\u90e8\u4e0d\u9002\u3001\u4e4f\u529b\u3001\u55dc\u7761\u3001\u4fbf\u79d8\u3001\u5fc3\u60b8\uff0c\u5076\u89c1\u6ccc\u4e73\u3001\u4e73\u623f\u80bf\u5927\u3001\u80a5\u80d6\u3001\u95ed\u7ecf\u7b49\u3002\u2461\u6ce8\u5c04\u6216\u53e3\u670d\u5927\u5242\u91cf\n\u65f6\u53ef\u5f15\u8d77\u4f53\u4f4d\u6027\u4f4e\u8840\u538b\uff0c\u7528\u836f\u540e\u5e94 \u9759\u53671?2\u5c0f\u65f6\uff0c\u8840\u538b\u8fc7\u4f4e\u65f6\u53ef\u9759\u8109\u6ef4\u6ce8\u53bb\u7532\u80be\u4e0a\u817a\u7d20\u6216\u9ebb\u9ec4\u78b1\u5347\u538b\u3002\u4f46\u4e0d\u53ef\u7528\u80be\u4e0a\u817a\u7d20\uff0c\u4ee5\u9632\u8840\u538b\n\u964d\u7684\u66f4\u4f4e\u3002\u2462\u5bf9\u809d\u529f\u80fd\u6709\u4e00\u5b9a\u5f71\u54cd\uff0c\u5076\u53ef\u5f15\u8d77\u963b\u585e\u6027\u9ec4\u75b8\u3001\u809d\u80bf\u5927\uff0c\u505c\u836f\u540e\u53ef\u6062\u590d\u3002\u2463\u957f\u671f\u5927\u91cf\u5e94\u7528\u65f6\u53ef\u5f15\u8d77\u9525\u4f53\u5916\u7cfb\u53cd\u5e94\uff0c\u4e3a\u6297\u7cbe\u795e\u75c5\n\u836f\u7269\u5e38\u89c1\u7684\u4e0d\u826f\u53cd\u5e94\u3002\u7531\u4e8e\u963b\u65ad\u591a\u5df4\u80fa\u80fd\u7eb9\u72b6\u4f53\u9ed1\u8d28\u4f20\u5bfc\u9014 \u5f84\u4ea7\u751f\u9707\u98a4\u9ebb\u75f9\u7efc\u5408\u5f81\u3001\u6025\u6027\u808c\u5f20\u529b\u969c\u788d\u3001\u9759\u5750\u4e0d\u80fd\u7b49\u75c7\u72b6\uff0c \u53ef\u7528\u82ef\u6d77\u7d22\n\u5bf9\u6297\u4e4b\uff0c\u4f46\u80fd\u964d\u4f4e\u7597\u6548\u3002\u672c\u54c1\u8fd8\u53ef\u5f15\u8d77\u4e00\u79cd\u7279\u6b8a\u6301\u4e45\u7684\u8fd0\u52a8\u969c\u788d\uff0c\u79f0\u4e3a\u8fdf\u53d1\u6027\u8fd0\u52a8\u969c\u788d\uff0c\u8868\u73b0\u4e3a\u4e0d\u81ea\u4e3b\u7684\u523b\u677f\u8fd0\u52a8\uff0c\u505c\u836f\u540e\u4e0d\u6d88\u5931\uff0c\u6297\u80c6\n\u78b1\u836f\u53ef\u52a0\u91cd\u6b64\u53cd\u5e94\u3002\u2464\u53ef\u53d1\u751f\u8fc7\u654f\u53cd\u5e94\uff0c\u5e38\u89c1\u7684\u6709\u76ae\u75b9\u3001\u63a5\u89e6\u6027\u76ae\u708e\u3001\u5265\u8131\u6027\u76ae\u708e\u3001\u7c92\u7ec6\u80de\u51cf\u5c11(\u6b64\u53cd\u5e94\u5c11\u89c1\uff0c\u4e00\u65e6\u53d1\u751f\u5e94\u7acb\u5373\u505c\u836f)\u3001\n\u54ee\u5598\u3001\u7d2b\u765c\u7b49\u3002\u2465\u53ef\u5f15\u8d77\u773c\u90e8\u5e76\u53d1\u75c7\uff0c\u4e3b\u8981\u8868\u73b0\u4e3a\u89d2\u819c\u548c\u6676\u4f53\u6df7\u6d4a\uff0c\u6216\u4f7f\u773c\u538b\u5347\u9ad8\u3002\u5bf9\u957f\u671f\u4f7f\u7528\u8005\u5e94\u4f5c\u773c\u90e8\u68c0\u67e5\uff0c\u5e38\u89c4\u534a\u5e74\u590d\u67e51\u6b21\u3002\u9ad8\n\u5242\u91cf\u5e94\u7528\u672c\u54c1\u65f6\uff0c\u590f\u5b63\u6700\u597d\u6234\u592a\u9633\u955c\u4ee5\u4fdd\u62a4\u89d2\u819c\u548c\u6676\u4f53\u3002",
+                    "des": "\u2460\u4e3b\u8981\u4e0d\u826f\u53cd\u5e94\u6709\u53e3\u5e72\u3001\u89c6\u7269\u4e0d\u6e05\u3001\u4e0a\u8179\u90e8\u4e0d\u9002\u3001\u4e4f\u529b\u3001\u55dc\u7761\u3001\u4fbf\u79d8\u3001\u5fc3\u60b8\uff0c\u5076\u89c1\u6ccc\u4e73\u3001\u4e73\u623f\u80bf\u5927\u3001\u80a5\u80d6\u3001\u95ed\u7ecf\u7b49\u3002\u2461\u6ce8\u5c04\u6216\u53e3\u670d\u5927\u5242\u91cf\n\u65f6\u53ef\u5f15\u8d77\u4f53\u4f4d\u6027\u4f4e\u8840\u538b\uff0c\u7528\u836f\u540e\u5e94 \u9759\u53671?2\u5c0f\u65f6\uff0c\u8840\u538b\u8fc7\u4f4e\u65f6\u53ef\u9759\u8109\u6ef4\u6ce8\u53bb\u7532\u80be\u4e0a\u817a\u7d20\u6216\u9ebb\u9ec4\u78b1\u5347\u538b\u3002\u4f46\u4e0d\u53ef\u7528\u80be\u4e0a\u817a\u7d20\uff0c\u4ee5\u9632\u8840\u538b\n\u964d\u7684\u66f4\u4f4e\u3002\u2462\u5bf9\u809d\u529f\u80fd\u6709\u4e00\u5b9a\u5f71\u54cd\uff0c\u5076\u53ef\u5f15\u8d77\u963b\u585e\u6027\u9ec4\u75b8\u3001\u809d\u80bf\u5927\uff0c\u505c\u836f\u540e\u53ef\u6062\u590d\u3002\u2463\u957f\u671f\u5927\u91cf\u5e94\u7528\u65f6\u53ef\u5f15\u8d77\u9525\u4f53\u5916\u7cfb\u53cd\u5e94\uff0c\u4e3a\u6297\u7cbe\u795e\u75c5\n\u836f\u7269\u5e38\u89c1\u7684\u4e0d\u826f\u53cd\u5e94\u3002\u7531\u4e8e\u963b\u65ad\u591a\u5df4\u80fa\u80fd\u7eb9\u72b6\u4f53\u9ed1\u8d28\u4f20\u5bfc\u9014 \u5f84\u4ea7\u751f\u9707\u98a4\u9ebb\u75f9\u7efc\u5408\u5f81\u3001\u6025\u6027\u808c\u5f20\u529b\u969c\u788d\u3001\u9759\u5750\u4e0d\u80fd\u7b49\u75c7\u72b6\uff0c \u53ef\u7528\u82ef\u6d77\u7d22\n\u5bf9\u6297\u4e4b\uff0c\u4f46\u80fd\u964d\u4f4e\u7597\u6548\u3002\u672c\u54c1\u8fd8\u53ef\u5f15\u8d77\u4e00\u79cd\u7279\u6b8a\u6301\u4e45\u7684\u8fd0\u52a8\u969c\u788d\uff0c\u79f0\u4e3a\u8fdf\u53d1\u6027\u8fd0\u52a8\u969c\u788d\uff0c\u8868\u73b0\u4e3a\u4e0d\u81ea\u4e3b\u7684\u523b\u677f\u8fd0\u52a8\uff0c\u505c\u836f\u540e\u4e0d\u6d88\u5931\uff0c\u6297\u80c6\n\u78b1\u836f\u53ef\u52a0\u91cd\u6b64\u53cd\u5e94\u3002\u2464\u53ef\u53d1\u751f\u8fc7\u654f\u53cd\u5e94\uff0c\u5e38\u89c1\u7684\u6709\u76ae\u75b9\u3001\u63a5\u89e6\u6027\u76ae\u708e\u3001\u5265\u8131\u6027\u76ae\u708e\u3001\u7c92\u7ec6\u80de\u51cf\u5c11(\u6b64\u53cd\u5e94\u5c11\u89c1\uff0c\u4e00\u65e6\u53d1\u751f\u5e94\u7acb\u5373\u505c\u836f)\u3001\n\u54ee\u5598\u3001\u7d2b\u765c\u7b49\u3002\u2465\u53ef\u5f15\u8d77\u773c\u90e8\u5e76\u53d1\u75c7\uff0c\u4e3b\u8981\u8868\u73b0\u4e3a\u89d2\u819c\u548c\u6676\u4f53\u6df7\u6d4a\uff0c\u6216\u4f7f\u773c\u538b\u5347\u9ad8\u3002\u5bf9\u957f\u671f\u4f7f\u7528\u8005\u5e94\u4f5c\u773c\u90e8\u68c0\u67e5\uff0c\u5e38\u89c4\u534a\u5e74\u590d\u67e51\u6b21\u3002\u9ad8\n\u5242\u91cf\u5e94\u7528\u672c\u54c1\u65f6\uff0c\u590f\u5b63\u6700\u597d\u6234\u592a\u9633\u955c\u4ee5\u4fdd\u62a4\u89d2\u819c\u548c\u6676\u4f53\u3002",
+                    "category": 5,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u5bf9\u5429\u567b\u55ea\u7c7b\u836f\u7269\u8fc7\u654f\u8005\u3001\u9aa8\u9ad3\u6291\u5236\u8005\u3001\u9752\u5149\u773c\u60a3\u8005\u3001\u809d\u529f\u80fd\u4e25\u91cd\u51cf\u9000\u3001\u6709\u766b\u75eb\u75c5\u53f2\u8005\u53ca\u660f\u8ff7\u60a3\u8005(\u7279\u522b\u662f\u7528\u4e2d\u67a2\u795e\u7ecf\u6291\u5236\u836f\u540e)\u7981\u7528\u3002",
+                    "des": "\u5bf9\u5429\u567b\u55ea\u7c7b\u836f\u7269\u8fc7\u654f\u8005\u3001\u9aa8\u9ad3\u6291\u5236\u8005\u3001\u9752\u5149\u773c\u60a3\u8005\u3001\u809d\u529f\u80fd\u4e25\u91cd\u51cf\u9000\u3001\u6709\u766b\u75eb\u75c5\u53f2\u8005\u53ca\u660f\u8ff7\u60a3\u8005(\u7279\u522b\u662f\u7528\u4e2d\u67a2\u795e\u7ecf\u6291\u5236\u836f\u540e)\u7981\u7528\u3002",
+                    "category": 3,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u2460\u809d\u529f\u80fd\u4e0d\u5168\u3001\u5c3f\u6bd2\u75c7\u53ca\u9ad8\u8840\u538b\u3001\u51a0\u5fc3\u75c5\u60a3\u8005\u614e\u7528\uff0c\u957f\u671f\u7528\u836f\u65f6\u5e94\u5b9a\u671f\u68c0\u67fb\u809d\u529f\u80fd\u3002\u2461\u672c\u54c1\u523a\u6fc0\u6027\u5927\uff0c\u9759\u8109\u6ce8\u5c04\u65f6\u53ef\u5f15\u8d77\u8840\u6813\u6027\u9759\u8109\u708e\uff0c\n\u808c\u5185\u6ce8\u5c04\u5c40\u90e8\u75bc\u75db\u8f83\u91cd\uff0c\u53ef\u52a01%\u666e\u9c81\u5361\u56e0\u4f5c\u6df1\u90e8\u808c\u5185\u6ce8\u5c04\u3002\u2462\u672c\u54c1\u6709\u65f6\u53ef\u5f15\u8d77\u6291\u90c1\u72b6\u6001\uff0c\u7528\u836f\u65f6\u5e94\u6ce8\u610f\u3002\u24636\u4e2a\u6708\u4ee5\u4e0b\u5a74\u513f\u4e0d\u63a8\u8350\u4fbf\u7528\n\u3002\u2464\u8001\u5e74\u4eba\u5bf9\u672c\u7c7b\u836f\u7269\u7684\u8010\u53d7\u6027\u964d\u4f4e\uff0c\u4e14\u6613\u4ea7\u751f\u4f4e\u8840\u538b\u3001\u8fc7\u5ea6\u9547\u9759\u53ca\u4e0d\u6613\u6d88\u9664\u7684\u8fdf\u53d1\u6027\u8fd0\u52a8\u969c\u788d\u3002",
+                    "des": "\u2460\u809d\u529f\u80fd\u4e0d\u5168\u3001\u5c3f\u6bd2\u75c7\u53ca\u9ad8\u8840\u538b\u3001\u51a0\u5fc3\u75c5\u60a3\u8005\u614e\u7528\uff0c\u957f\u671f\u7528\u836f\u65f6\u5e94\u5b9a\u671f\u68c0\u67fb\u809d\u529f\u80fd\u3002\u2461\u672c\u54c1\u523a\u6fc0\u6027\u5927\uff0c\u9759\u8109\u6ce8\u5c04\u65f6\u53ef\u5f15\u8d77\u8840\u6813\u6027\u9759\u8109\u708e\uff0c\n\u808c\u5185\u6ce8\u5c04\u5c40\u90e8\u75bc\u75db\u8f83\u91cd\uff0c\u53ef\u52a01%\u666e\u9c81\u5361\u56e0\u4f5c\u6df1\u90e8\u808c\u5185\u6ce8\u5c04\u3002\u2462\u672c\u54c1\u6709\u65f6\u53ef\u5f15\u8d77\u6291\u90c1\u72b6\u6001\uff0c\u7528\u836f\u65f6\u5e94\u6ce8\u610f\u3002\u24636\u4e2a\u6708\u4ee5\u4e0b\u5a74\u513f\u4e0d\u63a8\u8350\u4fbf\u7528\n\u3002\u2464\u8001\u5e74\u4eba\u5bf9\u672c\u7c7b\u836f\u7269\u7684\u8010\u53d7\u6027\u964d\u4f4e\uff0c\u4e14\u6613\u4ea7\u751f\u4f4e\u8840\u538b\u3001\u8fc7\u5ea6\u9547\u9759\u53ca\u4e0d\u6613\u6d88\u9664\u7684\u8fdf\u53d1\u6027\u8fd0\u52a8\u969c\u788d\u3002",
+                    "category": 2,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u8e81\u72c2\u75c7",
+                    "des": "\u8e81\u72c2\u75c7",
+                    "category": 4,
+                    "symbolSize": 70
+                }
+            ],
+            "categories": [
+                {},
+                {
+                    "name": "drug"
+                },
+                {
+                    "name": "attention"
+                },
+                {
+                    "name": "forbid"
+                },
+                {
+                    "name": "disease"
+                },
+                {
+                    "name": "uneffect"
+                },
+                {
+                    "name": "use"
+                }
+            ],
+            "edgeLabel": {
+                "show": true,
+                "margin": 8,
+                "formatter": function (x) {return x.data.name;}
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": [
+                4,
+                10
+            ],
+            "links": [
+                {
+                    "source": "\u6c2f\u4e19\u55ea",
+                    "target": "attention|centernode",
+                    "name": "attention"
+                },
+                {
+                    "source": "\u6c2f\u4e19\u55ea",
+                    "target": "forbid|centernode",
+                    "name": "forbid"
+                },
+                {
+                    "source": "\u6c2f\u4e19\u55ea",
+                    "target": "uneffect|centernode",
+                    "name": "uneffect"
+                },
+                {
+                    "source": "\u6c2f\u4e19\u55ea",
+                    "target": "cure_disease|centernode",
+                    "name": "cure_disease"
+                },
+                {
+                    "source": "\u6c2f\u4e19\u55ea",
+                    "target": "use|centernode",
+                    "name": "use"
+                },
+                {
+                    "source": "use|centernode",
+                    "target": "\u7531\u4e8e\u5242\u578b\u53ca\u89c4\u683c\u4e0d\u540c\uff0c\u7528\u6cd5\u7528\u91cf\u8bf7\u4ed4\u7ec6\u9605\u8bfb\u836f\u54c1\u8bf4\u660e\u4e66\u6216\u9075\u533b\u5631\u3002",
+                    "name": " "
+                },
+                {
+                    "source": "uneffect|centernode",
+                    "target": "\u2460\u4e3b\u8981\u4e0d\u826f\u53cd\u5e94\u6709\u53e3\u5e72\u3001\u89c6\u7269\u4e0d\u6e05\u3001\u4e0a\u8179\u90e8\u4e0d\u9002\u3001\u4e4f\u529b\u3001\u55dc\u7761\u3001\u4fbf\u79d8\u3001\u5fc3\u60b8\uff0c\u5076\u89c1\u6ccc\u4e73\u3001\u4e73\u623f\u80bf\u5927\u3001\u80a5\u80d6\u3001\u95ed\u7ecf\u7b49\u3002\u2461\u6ce8\u5c04\u6216\u53e3\u670d\u5927\u5242\u91cf\n\u65f6\u53ef\u5f15\u8d77\u4f53\u4f4d\u6027\u4f4e\u8840\u538b\uff0c\u7528\u836f\u540e\u5e94 \u9759\u53671?2\u5c0f\u65f6\uff0c\u8840\u538b\u8fc7\u4f4e\u65f6\u53ef\u9759\u8109\u6ef4\u6ce8\u53bb\u7532\u80be\u4e0a\u817a\u7d20\u6216\u9ebb\u9ec4\u78b1\u5347\u538b\u3002\u4f46\u4e0d\u53ef\u7528\u80be\u4e0a\u817a\u7d20\uff0c\u4ee5\u9632\u8840\u538b\n\u964d\u7684\u66f4\u4f4e\u3002\u2462\u5bf9\u809d\u529f\u80fd\u6709\u4e00\u5b9a\u5f71\u54cd\uff0c\u5076\u53ef\u5f15\u8d77\u963b\u585e\u6027\u9ec4\u75b8\u3001\u809d\u80bf\u5927\uff0c\u505c\u836f\u540e\u53ef\u6062\u590d\u3002\u2463\u957f\u671f\u5927\u91cf\u5e94\u7528\u65f6\u53ef\u5f15\u8d77\u9525\u4f53\u5916\u7cfb\u53cd\u5e94\uff0c\u4e3a\u6297\u7cbe\u795e\u75c5\n\u836f\u7269\u5e38\u89c1\u7684\u4e0d\u826f\u53cd\u5e94\u3002\u7531\u4e8e\u963b\u65ad\u591a\u5df4\u80fa\u80fd\u7eb9\u72b6\u4f53\u9ed1\u8d28\u4f20\u5bfc\u9014 \u5f84\u4ea7\u751f\u9707\u98a4\u9ebb\u75f9\u7efc\u5408\u5f81\u3001\u6025\u6027\u808c\u5f20\u529b\u969c\u788d\u3001\u9759\u5750\u4e0d\u80fd\u7b49\u75c7\u72b6\uff0c \u53ef\u7528\u82ef\u6d77\u7d22\n\u5bf9\u6297\u4e4b\uff0c\u4f46\u80fd\u964d\u4f4e\u7597\u6548\u3002\u672c\u54c1\u8fd8\u53ef\u5f15\u8d77\u4e00\u79cd\u7279\u6b8a\u6301\u4e45\u7684\u8fd0\u52a8\u969c\u788d\uff0c\u79f0\u4e3a\u8fdf\u53d1\u6027\u8fd0\u52a8\u969c\u788d\uff0c\u8868\u73b0\u4e3a\u4e0d\u81ea\u4e3b\u7684\u523b\u677f\u8fd0\u52a8\uff0c\u505c\u836f\u540e\u4e0d\u6d88\u5931\uff0c\u6297\u80c6\n\u78b1\u836f\u53ef\u52a0\u91cd\u6b64\u53cd\u5e94\u3002\u2464\u53ef\u53d1\u751f\u8fc7\u654f\u53cd\u5e94\uff0c\u5e38\u89c1\u7684\u6709\u76ae\u75b9\u3001\u63a5\u89e6\u6027\u76ae\u708e\u3001\u5265\u8131\u6027\u76ae\u708e\u3001\u7c92\u7ec6\u80de\u51cf\u5c11(\u6b64\u53cd\u5e94\u5c11\u89c1\uff0c\u4e00\u65e6\u53d1\u751f\u5e94\u7acb\u5373\u505c\u836f)\u3001\n\u54ee\u5598\u3001\u7d2b\u765c\u7b49\u3002\u2465\u53ef\u5f15\u8d77\u773c\u90e8\u5e76\u53d1\u75c7\uff0c\u4e3b\u8981\u8868\u73b0\u4e3a\u89d2\u819c\u548c\u6676\u4f53\u6df7\u6d4a\uff0c\u6216\u4f7f\u773c\u538b\u5347\u9ad8\u3002\u5bf9\u957f\u671f\u4f7f\u7528\u8005\u5e94\u4f5c\u773c\u90e8\u68c0\u67e5\uff0c\u5e38\u89c4\u534a\u5e74\u590d\u67e51\u6b21\u3002\u9ad8\n\u5242\u91cf\u5e94\u7528\u672c\u54c1\u65f6\uff0c\u590f\u5b63\u6700\u597d\u6234\u592a\u9633\u955c\u4ee5\u4fdd\u62a4\u89d2\u819c\u548c\u6676\u4f53\u3002",
+                    "name": " "
+                },
+                {
+                    "source": "forbid|centernode",
+                    "target": "\u5bf9\u5429\u567b\u55ea\u7c7b\u836f\u7269\u8fc7\u654f\u8005\u3001\u9aa8\u9ad3\u6291\u5236\u8005\u3001\u9752\u5149\u773c\u60a3\u8005\u3001\u809d\u529f\u80fd\u4e25\u91cd\u51cf\u9000\u3001\u6709\u766b\u75eb\u75c5\u53f2\u8005\u53ca\u660f\u8ff7\u60a3\u8005(\u7279\u522b\u662f\u7528\u4e2d\u67a2\u795e\u7ecf\u6291\u5236\u836f\u540e)\u7981\u7528\u3002",
+                    "name": " "
+                },
+                {
+                    "source": "attention|centernode",
+                    "target": "\u2460\u809d\u529f\u80fd\u4e0d\u5168\u3001\u5c3f\u6bd2\u75c7\u53ca\u9ad8\u8840\u538b\u3001\u51a0\u5fc3\u75c5\u60a3\u8005\u614e\u7528\uff0c\u957f\u671f\u7528\u836f\u65f6\u5e94\u5b9a\u671f\u68c0\u67fb\u809d\u529f\u80fd\u3002\u2461\u672c\u54c1\u523a\u6fc0\u6027\u5927\uff0c\u9759\u8109\u6ce8\u5c04\u65f6\u53ef\u5f15\u8d77\u8840\u6813\u6027\u9759\u8109\u708e\uff0c\n\u808c\u5185\u6ce8\u5c04\u5c40\u90e8\u75bc\u75db\u8f83\u91cd\uff0c\u53ef\u52a01%\u666e\u9c81\u5361\u56e0\u4f5c\u6df1\u90e8\u808c\u5185\u6ce8\u5c04\u3002\u2462\u672c\u54c1\u6709\u65f6\u53ef\u5f15\u8d77\u6291\u90c1\u72b6\u6001\uff0c\u7528\u836f\u65f6\u5e94\u6ce8\u610f\u3002\u24636\u4e2a\u6708\u4ee5\u4e0b\u5a74\u513f\u4e0d\u63a8\u8350\u4fbf\u7528\n\u3002\u2464\u8001\u5e74\u4eba\u5bf9\u672c\u7c7b\u836f\u7269\u7684\u8010\u53d7\u6027\u964d\u4f4e\uff0c\u4e14\u6613\u4ea7\u751f\u4f4e\u8840\u538b\u3001\u8fc7\u5ea6\u9547\u9759\u53ca\u4e0d\u6613\u6d88\u9664\u7684\u8fdf\u53d1\u6027\u8fd0\u52a8\u969c\u788d\u3002",
+                    "name": " "
+                },
+                {
+                    "source": "cure_disease|centernode",
+                    "target": "\u8e81\u72c2\u75c7",
+                    "name": " "
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "formatter": function (x) { if(x.dataType === 'edge'){return x.data.name;} var strs = x.data.des;  var str = ''; for(var i = 0, s; s = strs[i++];) { if(i==500){str+='...'; break;} str += s; if(!(i % 50)) str += '<br>'; } return str;},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "drug",
+                "attention",
+                "forbid",
+                "disease",
+                "uneffect",
+                "use"
+            ],
+            "selected": {
+                "": true,
+                "drug": true,
+                "attention": true,
+                "forbid": true,
+                "disease": true,
+                "uneffect": true,
+                "use": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u6c2f\u4e19\u55ea\u76f8\u5173\u77e5\u8bc6\u56fe\u8c31",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_c97e06e53b5c466b83c9272348ccdee6.setOption(option_c97e06e53b5c466b83c9272348ccdee6);
+    </script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="278a1986a20d4099b8216783c97dcff5" class="chart-container" style="width:100%; height:700px;"></div>
+    <script>
+        var chart_278a1986a20d4099b8216783c97dcff5 = echarts.init(
+            document.getElementById('278a1986a20d4099b8216783c97dcff5'), 'white', {renderer: 'canvas'});
+        var option_278a1986a20d4099b8216783c97dcff5 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 2500,
+                "edgeLength": 50,
+                "gravity": 0.2
+            },
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "formatter": function (x) { var strs = x.data.name;   var n='';    var str='centernode';   if(strs.search(str)!=-1) {return  n;}   var strs = x.data.name.split('|')[0];  if(strs.length<=6){                       return strs;                   }else {                       name = strs.slice(0,6) + '...';                        return name;                   }}
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": true,
+            "focusNodeAdjacency": "true",
+            "data": [
+                {
+                    "name": "\u5987\u5b81\u5eb7\u80f6\u56ca|drug",
+                    "des": "\u5987\u5b81\u5eb7\u80f6\u56ca",
+                    "category": 6,
+                    "symbolSize": 90
+                },
+                {
+                    "name": "attention|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "cure_disease|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "use|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "forbid|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "uneffect|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "\u7531\u4e8e\u5242\u578b\u53ca\u89c4\u683c\u4e0d\u540c\uff0c\u7528\u6cd5\u7528\u91cf\u8bf7\u4ed4\u7ec6\u9605\u8bfb\u836f\u54c1\u8bf4\u660e\u4e66\u6216\u9075\u533b\u5631\u3002|use",
+                    "des": "\u7531\u4e8e\u5242\u578b\u53ca\u89c4\u683c\u4e0d\u540c\uff0c\u7528\u6cd5\u7528\u91cf\u8bf7\u4ed4\u7ec6\u9605\u8bfb\u836f\u54c1\u8bf4\u660e\u4e66\u6216\u9075\u533b\u5631\u3002",
+                    "category": 2,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u5c1a\u4e0d\u660e\u786e\u3002|uneffect",
+                    "des": "\u5c1a\u4e0d\u660e\u786e\u3002",
+                    "category": 3,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u5c1a\u4e0d\u660e\u786e\u3002|forbid",
+                    "des": "\u5c1a\u4e0d\u660e\u786e\u3002",
+                    "category": 4,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u5c1a\u4e0d\u660e\u786e\u3002|attention",
+                    "des": "\u5c1a\u4e0d\u660e\u786e\u3002",
+                    "category": 1,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u4ea7\u540e\u7cbe\u795e\u6291\u90c1|disease",
+                    "des": "\u4ea7\u540e\u7cbe\u795e\u6291\u90c1",
+                    "category": 5,
+                    "symbolSize": 70
+                }
+            ],
+            "categories": [
+                {},
+                {
+                    "name": "attention"
+                },
+                {
+                    "name": "use"
+                },
+                {
+                    "name": "uneffect"
+                },
+                {
+                    "name": "forbid"
+                },
+                {
+                    "name": "disease"
+                },
+                {
+                    "name": "drug"
+                }
+            ],
+            "edgeLabel": {
+                "show": true,
+                "margin": 8,
+                "formatter": function (x) {return x.data.name;}
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": [
+                4,
+                10
+            ],
+            "links": [
+                {
+                    "source": "\u5987\u5b81\u5eb7\u80f6\u56ca|drug",
+                    "target": "attention|centernode",
+                    "name": "attention"
+                },
+                {
+                    "source": "\u5987\u5b81\u5eb7\u80f6\u56ca|drug",
+                    "target": "cure_disease|centernode",
+                    "name": "cure_disease"
+                },
+                {
+                    "source": "\u5987\u5b81\u5eb7\u80f6\u56ca|drug",
+                    "target": "use|centernode",
+                    "name": "use"
+                },
+                {
+                    "source": "\u5987\u5b81\u5eb7\u80f6\u56ca|drug",
+                    "target": "forbid|centernode",
+                    "name": "forbid"
+                },
+                {
+                    "source": "\u5987\u5b81\u5eb7\u80f6\u56ca|drug",
+                    "target": "uneffect|centernode",
+                    "name": "uneffect"
+                },
+                {
+                    "source": "use|centernode",
+                    "target": "\u7531\u4e8e\u5242\u578b\u53ca\u89c4\u683c\u4e0d\u540c\uff0c\u7528\u6cd5\u7528\u91cf\u8bf7\u4ed4\u7ec6\u9605\u8bfb\u836f\u54c1\u8bf4\u660e\u4e66\u6216\u9075\u533b\u5631\u3002|use",
+                    "name": " "
+                },
+                {
+                    "source": "uneffect|centernode",
+                    "target": "\u5c1a\u4e0d\u660e\u786e\u3002|uneffect",
+                    "name": " "
+                },
+                {
+                    "source": "forbid|centernode",
+                    "target": "\u5c1a\u4e0d\u660e\u786e\u3002|forbid",
+                    "name": " "
+                },
+                {
+                    "source": "attention|centernode",
+                    "target": "\u5c1a\u4e0d\u660e\u786e\u3002|attention",
+                    "name": " "
+                },
+                {
+                    "source": "cure_disease|centernode",
+                    "target": "\u4ea7\u540e\u7cbe\u795e\u6291\u90c1|disease",
+                    "name": " "
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "formatter": function (x) { if(x.dataType === 'edge'){return x.data.name;} var strs = x.data.des;  var str = ''; for(var i = 0, s; s = strs[i++];) { if(i==500){str+='...'; break;} str += s; if(!(i % 50)) str += '<br>'; } return str;},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "attention",
+                "use",
+                "uneffect",
+                "forbid",
+                "disease",
+                "drug"
+            ],
+            "selected": {
+                "": true,
+                "attention": true,
+                "use": true,
+                "uneffect": true,
+                "forbid": true,
+                "disease": true,
+                "drug": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u5987\u5b81\u5eb7\u80f6\u56ca\u76f8\u5173\u77e5\u8bc6\u56fe\u8c31",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_278a1986a20d4099b8216783c97dcff5.setOption(option_278a1986a20d4099b8216783c97dcff5);
+    </script>
+</body>
+</html>

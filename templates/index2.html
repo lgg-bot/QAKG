@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <style>
+         html,body{
+            background: #2e3254;
+            height: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+<div style ="width:100％;text-align:center">
+<font style="font-size:25px;text-align:right;" color="#1c9dff">医疗问答</font>
+</div>
+<br><br>
+<div style ="width:100％;text-align:center">
+    <form action="/deal_question" method="get" >
+        <input type="text" name="q" style="width:500px;">
+        <input type="submit" value="提问" />
+    </form>
+    <br>
+
+</div>
+ <font size="5" color="#8aa3cd" >用户：{{ question }}</font>
+    <br>
+    <br>
+    <font size="5" color="#8aa3cd" >ROBOT:{{ result }}</font>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="98385cec7f644782b22421de146588d4" class="chart-container" style="width:100%; height:700px;"></div>
+    <script>
+        var chart_98385cec7f644782b22421de146588d4 = echarts.init(
+            document.getElementById('98385cec7f644782b22421de146588d4'), 'white', {renderer: 'canvas'});
+        var option_98385cec7f644782b22421de146588d4 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 2500,
+                "edgeLength": 50,
+                "gravity": 0.2
+            },
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "formatter": function (x) { var strs = x.data.name;   var n='';    var str='centernode';   if(strs.search(str)!=-1) {return  n;}   var strs = x.data.name;  if(strs.length<=6){                       return strs;                   }else {                       name = strs.slice(0,6) + '...';                        return name;                   }}
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": true,
+            "focusNodeAdjacency": "true",
+            "data": [
+                {
+                    "name": "\u6025\u6027\u6291\u90c1\u75c7",
+                    "des": "\u6025\u6027\u6291\u90c1\u75c7",
+                    "category": 1,
+                    "symbolSize": 90
+                },
+                {
+                    "name": "recommend_drug|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "desc|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "\u6025\u6027\u6291\u90c1\u75c7\uff0c\u53d1\u75c5\u8f83\u6025\uff0c\u75c7\u72b6\u8f83\u8f7b\u6027\u6291\u90c1\u75c7\uff0c\u6709\u7684\u5219\u662f\u7531\u8f7b\u6027\u6291\u90c1\u8fc7\u6e21\u800c\u6765\u3002\u4e3b\u8981\u7ed9\u4e88\u6297\u6291\u90c1\u5242\u6cbb\u7597\u3002",
+                    "des": "\u6025\u6027\u6291\u90c1\u75c7\uff0c\u53d1\u75c5\u8f83\u6025\uff0c\u75c7\u72b6\u8f83\u8f7b\u6027\u6291\u90c1\u75c7\uff0c\u6709\u7684\u5219\u662f\u7531\u8f7b\u6027\u6291\u90c1\u8fc7\u6e21\u800c\u6765\u3002\u4e3b\u8981\u7ed9\u4e88\u6297\u6291\u90c1\u5242\u6cbb\u7597\u3002",
+                    "category": 2,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u8418\u666e\u751f\u94a0\u6ce8\u5c04\u6db2",
+                    "des": "\u8418\u666e\u751f\u94a0\u6ce8\u5c04\u6db2",
+                    "category": 3,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u53ef\u5f85\u56e0\u6854\u6897\u7247",
+                    "des": "\u53ef\u5f85\u56e0\u6854\u6897\u7247",
+                    "category": 3,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u76d0\u9178\u585e\u5229\u6d1b\u5c14\u7247",
+                    "des": "\u76d0\u9178\u585e\u5229\u6d1b\u5c14\u7247",
+                    "category": 3,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u5361\u9a6c\u897f\u5e73\u7247",
+                    "des": "\u5361\u9a6c\u897f\u5e73\u7247",
+                    "category": 3,
+                    "symbolSize": 70
+                }
+            ],
+            "categories": [
+                {},
+                {
+                    "name": "disease"
+                },
+                {
+                    "name": "desc"
+                },
+                {
+                    "name": "drug"
+                }
+            ],
+            "edgeLabel": {
+                "show": true,
+                "margin": 8,
+                "formatter": function (x) {return x.data.name;}
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": [
+                4,
+                10
+            ],
+            "links": [
+                {
+                    "source": "\u6025\u6027\u6291\u90c1\u75c7",
+                    "target": "recommend_drug|centernode",
+                    "name": "recommend_drug"
+                },
+                {
+                    "source": "\u6025\u6027\u6291\u90c1\u75c7",
+                    "target": "desc|centernode",
+                    "name": "desc"
+                },
+                {
+                    "source": "desc|centernode",
+                    "target": "\u6025\u6027\u6291\u90c1\u75c7\uff0c\u53d1\u75c5\u8f83\u6025\uff0c\u75c7\u72b6\u8f83\u8f7b\u6027\u6291\u90c1\u75c7\uff0c\u6709\u7684\u5219\u662f\u7531\u8f7b\u6027\u6291\u90c1\u8fc7\u6e21\u800c\u6765\u3002\u4e3b\u8981\u7ed9\u4e88\u6297\u6291\u90c1\u5242\u6cbb\u7597\u3002",
+                    "name": " "
+                },
+                {
+                    "source": "recommend_drug|centernode",
+                    "target": "\u8418\u666e\u751f\u94a0\u6ce8\u5c04\u6db2",
+                    "name": " "
+                },
+                {
+                    "source": "recommend_drug|centernode",
+                    "target": "\u53ef\u5f85\u56e0\u6854\u6897\u7247",
+                    "name": " "
+                },
+                {
+                    "source": "recommend_drug|centernode",
+                    "target": "\u76d0\u9178\u585e\u5229\u6d1b\u5c14\u7247",
+                    "name": " "
+                },
+                {
+                    "source": "recommend_drug|centernode",
+                    "target": "\u5361\u9a6c\u897f\u5e73\u7247",
+                    "name": " "
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "formatter": function (x) { if(x.dataType === 'edge'){return x.data.name;} var strs = x.data.des;  var str = ''; for(var i = 0, s; s = strs[i++];) { if(i==500){str+='...'; break;} str += s; if(!(i % 50)) str += '<br>'; } return str;},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "disease",
+                "desc",
+                "drug"
+            ],
+            "selected": {
+                "": true,
+                "disease": true,
+                "desc": true,
+                "drug": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u6025\u6027\u6291\u90c1\u75c7\u76f8\u5173\u77e5\u8bc6\u56fe\u8c31",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_98385cec7f644782b22421de146588d4.setOption(option_98385cec7f644782b22421de146588d4);
+    </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="b8b0dff645144c4e868bf7b000edece3" class="chart-container" style="width:100%; height:700px;"></div>
+    <script>
+        var chart_b8b0dff645144c4e868bf7b000edece3 = echarts.init(
+            document.getElementById('b8b0dff645144c4e868bf7b000edece3'), 'white', {renderer: 'canvas'});
+        var option_b8b0dff645144c4e868bf7b000edece3 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 2500,
+                "edgeLength": 50,
+                "gravity": 0.2
+            },
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "formatter": function (x) { var strs = x.data.name;   var n='';    var str='centernode';   if(strs.search(str)!=-1) {return  n;}   var strs = x.data.name.split('|')[0];  if(strs.length<=6){                       return strs;                   }else {                       name = strs.slice(0,6) + '...';                        return name;                   }}
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": true,
+            "focusNodeAdjacency": "true",
+            "data": [
+                {
+                    "name": "\u65cb\u8f6c\u6027\u7729\u6655|symptom",
+                    "des": "\u65cb\u8f6c\u6027\u7729\u6655",
+                    "category": 1,
+                    "symbolSize": 90
+                },
+                {
+                    "name": "accompany_disease|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "desc|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "\u5934\u6655 \u53c8\u79f0\u4e3a \u7729\u6655 \uff0c\u662f\u4e00\u79cd\u4e3b\u89c2\u7684\u611f\u89c9\u5f02\u5e38\u3002\u53ef\u5206\u4e3a\u4e24\u7c7b\uff1a \u4e00\u4e3a \u65cb\u8f6c\u6027\u7729\u6655 \uff0c\u591a\u7531\u524d\u5ead\u795e\u7ecf\u7cfb\u7edf\u53ca\u5c0f\u8111\u7684\u529f\u80fd\u969c\u788d\u6240\u81f4\uff0c \u4ee5\u503e\u5012\u7684\u611f\u89c9\u4e3a\u4e3b\uff0c\u611f\u5230\u81ea\u8eab\u6643\u52a8\u6216\u666f\u7269\u65cb\u8f6c\u3002\u4e8c\u4e3a\u4e00\u822c\u6027\u6655\uff0c\u591a\u7531\u67d0\u4e9b\u5168\u8eab\u6027\u75be\u75c5\u5f15\u8d77\uff0c\u4ee5 \u5934\u660f \u7684\u611f\u89c9\u4e3a\u4e3b\uff0c\u611f\u5230\u5934\u91cd\u811a\u8f7b\u3002 \u5468\u56f4\u6027\u7729\u6655\uff1a\u662f\u6307\u5185\u8033\u8ff7\u8def\u6216\u524d\u5ead\u795e\u7ecf\u7684\u75c5\u53d8\u5bfc\u81f4\u7684\u7729\u6655\u75c7\u3002\u5e38\u89c1\u4e8e\u6885\u5c3c\u57c3\u75c5\u3001...|desc",
+                    "des": "\u5934\u6655 \u53c8\u79f0\u4e3a \u7729\u6655 \uff0c\u662f\u4e00\u79cd\u4e3b\u89c2\u7684\u611f\u89c9\u5f02\u5e38\u3002\u53ef\u5206\u4e3a\u4e24\u7c7b\uff1a \u4e00\u4e3a \u65cb\u8f6c\u6027\u7729\u6655 \uff0c\u591a\u7531\u524d\u5ead\u795e\u7ecf\u7cfb\u7edf\u53ca\u5c0f\u8111\u7684\u529f\u80fd\u969c\u788d\u6240\u81f4\uff0c \u4ee5\u503e\u5012\u7684\u611f\u89c9\u4e3a\u4e3b\uff0c\u611f\u5230\u81ea\u8eab\u6643\u52a8\u6216\u666f\u7269\u65cb\u8f6c\u3002\u4e8c\u4e3a\u4e00\u822c\u6027\u6655\uff0c\u591a\u7531\u67d0\u4e9b\u5168\u8eab\u6027\u75be\u75c5\u5f15\u8d77\uff0c\u4ee5 \u5934\u660f \u7684\u611f\u89c9\u4e3a\u4e3b\uff0c\u611f\u5230\u5934\u91cd\u811a\u8f7b\u3002 \u5468\u56f4\u6027\u7729\u6655\uff1a\u662f\u6307\u5185\u8033\u8ff7\u8def\u6216\u524d\u5ead\u795e\u7ecf\u7684\u75c5\u53d8\u5bfc\u81f4\u7684\u7729\u6655\u75c7\u3002\u5e38\u89c1\u4e8e\u6885\u5c3c\u57c3\u75c5\u3001...",
+                    "category": 3,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u524d\u5ead\u529f\u80fd\u7d0a\u4e71|disease",
+                    "des": "\u524d\u5ead\u529f\u80fd\u7d0a\u4e71",
+                    "category": 2,
+                    "symbolSize": 70
+                }
+            ],
+            "categories": [
+                {},
+                {
+                    "name": "symptom"
+                },
+                {
+                    "name": "disease"
+                },
+                {
+                    "name": "desc"
+                }
+            ],
+            "edgeLabel": {
+                "show": true,
+                "margin": 8,
+                "formatter": function (x) {return x.data.name;}
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": [
+                4,
+                10
+            ],
+            "links": [
+                {
+                    "source": "\u65cb\u8f6c\u6027\u7729\u6655|symptom",
+                    "target": "accompany_disease|centernode",
+                    "name": "accompany_disease"
+                },
+                {
+                    "source": "\u65cb\u8f6c\u6027\u7729\u6655|symptom",
+                    "target": "desc|centernode",
+                    "name": "desc"
+                },
+                {
+                    "source": "desc|centernode",
+                    "target": "\u5934\u6655 \u53c8\u79f0\u4e3a \u7729\u6655 \uff0c\u662f\u4e00\u79cd\u4e3b\u89c2\u7684\u611f\u89c9\u5f02\u5e38\u3002\u53ef\u5206\u4e3a\u4e24\u7c7b\uff1a \u4e00\u4e3a \u65cb\u8f6c\u6027\u7729\u6655 \uff0c\u591a\u7531\u524d\u5ead\u795e\u7ecf\u7cfb\u7edf\u53ca\u5c0f\u8111\u7684\u529f\u80fd\u969c\u788d\u6240\u81f4\uff0c \u4ee5\u503e\u5012\u7684\u611f\u89c9\u4e3a\u4e3b\uff0c\u611f\u5230\u81ea\u8eab\u6643\u52a8\u6216\u666f\u7269\u65cb\u8f6c\u3002\u4e8c\u4e3a\u4e00\u822c\u6027\u6655\uff0c\u591a\u7531\u67d0\u4e9b\u5168\u8eab\u6027\u75be\u75c5\u5f15\u8d77\uff0c\u4ee5 \u5934\u660f \u7684\u611f\u89c9\u4e3a\u4e3b\uff0c\u611f\u5230\u5934\u91cd\u811a\u8f7b\u3002 \u5468\u56f4\u6027\u7729\u6655\uff1a\u662f\u6307\u5185\u8033\u8ff7\u8def\u6216\u524d\u5ead\u795e\u7ecf\u7684\u75c5\u53d8\u5bfc\u81f4\u7684\u7729\u6655\u75c7\u3002\u5e38\u89c1\u4e8e\u6885\u5c3c\u57c3\u75c5\u3001...|desc",
+                    "name": " "
+                },
+                {
+                    "source": "accompany_disease|centernode",
+                    "target": "\u524d\u5ead\u529f\u80fd\u7d0a\u4e71|disease",
+                    "name": " "
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "formatter": function (x) { if(x.dataType === 'edge'){return x.data.name;} var strs = x.data.des;  var str = ''; for(var i = 0, s; s = strs[i++];) { if(i==500){str+='...'; break;} str += s; if(!(i % 50)) str += '<br>'; } return str;},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "symptom",
+                "disease",
+                "desc"
+            ],
+            "selected": {
+                "": true,
+                "symptom": true,
+                "disease": true,
+                "desc": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u65cb\u8f6c\u6027\u7729\u6655\u76f8\u5173\u77e5\u8bc6\u56fe\u8c31",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_b8b0dff645144c4e868bf7b000edece3.setOption(option_b8b0dff645144c4e868bf7b000edece3);
+    </script>
+</body>
+</html>

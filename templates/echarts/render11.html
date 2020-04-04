@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="34937b6470ca4004b8e1fe6d5c08b112" class="chart-container" style="width:100%; height:700px;"></div>
+    <script>
+        var chart_34937b6470ca4004b8e1fe6d5c08b112 = echarts.init(
+            document.getElementById('34937b6470ca4004b8e1fe6d5c08b112'), 'white', {renderer: 'canvas'});
+        var option_34937b6470ca4004b8e1fe6d5c08b112 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 2500,
+                "edgeLength": 50,
+                "gravity": 0.2
+            },
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "formatter": function (x) { var strs = x.data.name;   var n='';    var str='centernode';   if(strs.search(str)!=-1) {return  n;}   var strs = x.data.name.split('|')[0];  if(strs.length<=6){                       return strs;                   }else {                       name = strs.slice(0,6) + '...';                        return name;                   }}
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": true,
+            "focusNodeAdjacency": "true",
+            "data": [
+                {
+                    "name": "\u8e81\u72c2\u75c7|disease",
+                    "des": "\u8e81\u72c2\u75c7",
+                    "category": 3,
+                    "symbolSize": 90
+                },
+                {
+                    "name": "treatment|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "cause|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "has_symptom|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "prevent|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "recommend_drug|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "check|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "desc|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "\u8e81\u72c2\u75c7\u662f\u8e81\u72c2\u6291\u90c1\u75c7\u7684\u4e00\u79cd\u53d1\u4f5c\u5f62\u5f0f\u3002\u4ee5\u60c5\u611f\u9ad8\u6da8\u3001\u601d\u7ef4\u5954\u9038\u3001\u4ee5\u53ca\u8a00\u8bed\u52a8\u4f5c\u589e\u591a\u4e3a\u5178\u578b\u75c7\u72b6\u3002\u4ee5\u60c5\u611f\u9ad8\u6da8\u6216\u6613\u6fc0\u60f9\u4e3a\u4e3b\u8981\u4e34\u5e8a\u76f8\uff0c\u4f34\u968f\n\u7cbe\u529b\u65fa\u76db\u3001\u8a00\u8bed\u589e\u591a\u3001\u6d3b\u52a8\u589e\u591a\uff0c\u4e25\u91cd\u65f6\u4f34\u6709\u5e7b\u89c9\u3001\u5984\u60f3\u3001\u7d27\u5f20\u75c7\u72b6\u7b49\u7cbe\u795e\u75c5\u6027\u75c7\u72b6\u3002\u8e81\u72c2\u53d1\u4f5c\u65f6\u95f4\u9700\u6301\u7eed\u4e00\u5468\u4ee5\u4e0a\uff0c\u4e00\u822c\u5448\u53d1\u4f5c\u6027\u75c5\u7a0b\n\uff0c\u6bcf\u6b21\u53d1\u4f5c\u540e\u8fdb\u5165\u7cbe\u795e\u72b6\u6001\u6b63\u5e38\u7684\u95f4\u6b47\u7f13\u89e3\u671f\uff0c\u5927\u591a\u6570\u75c5\u4eba\u6709\u53cd\u590d\u53d1\u4f5c\u503e\u5411\u3002\n\u5728\u5fc3\u5883\u969c\u788d\u75c5\u7a0b\u957f\u671f\u89c2\u5bdf\u53d1\u73b0\uff0c\u59cb\u7ec8\u4ec5\u6709\u8e81\u72c2\u6216\u8f7b\u8e81\u72c2\u53d1\u4f5c\u8005\u975e\u5e38\u5c11\u89c1\uff0c\u5e76\u4e14\u8fd9\u4e9b\u60a3\u8005\u7684\u5bb6\u65cf\u53f2\u3001\u75c5\u524d\u4e2a\u6027\u3001\u751f\u7269\u5b66\u7279\u5f81\u3001\u6cbb\u7597\u539f\u5219\u53ca\u9884\n\u540e\u7b49\u4e0e\u517c\u6709\u6291\u90c1\u53d1\u4f5c\u7684\u53cc\u76f8\u969c\u788d\u7c7b\u4f3c\u3002\u56e0\u6b64\uff0c\u7cbe\u795e\u75be\u75c5\u7684\u56fd\u9645\u5206\u7c7b\u6cd5\u7cfb\u7edf(ICD-10)\u548c\u7f8e\u56fd\u5206\u7c7b\u6cd5\u7cfb\u7edf(DSM-\u2163)\u5df2\u5c06\u5176\u5217\u4e3a\n\u53cc\u76f8\u969c\u788d\u7684\u4e00\u79cd\u3002|desc",
+                    "des": "\u8e81\u72c2\u75c7\u662f\u8e81\u72c2\u6291\u90c1\u75c7\u7684\u4e00\u79cd\u53d1\u4f5c\u5f62\u5f0f\u3002\u4ee5\u60c5\u611f\u9ad8\u6da8\u3001\u601d\u7ef4\u5954\u9038\u3001\u4ee5\u53ca\u8a00\u8bed\u52a8\u4f5c\u589e\u591a\u4e3a\u5178\u578b\u75c7\u72b6\u3002\u4ee5\u60c5\u611f\u9ad8\u6da8\u6216\u6613\u6fc0\u60f9\u4e3a\u4e3b\u8981\u4e34\u5e8a\u76f8\uff0c\u4f34\u968f\n\u7cbe\u529b\u65fa\u76db\u3001\u8a00\u8bed\u589e\u591a\u3001\u6d3b\u52a8\u589e\u591a\uff0c\u4e25\u91cd\u65f6\u4f34\u6709\u5e7b\u89c9\u3001\u5984\u60f3\u3001\u7d27\u5f20\u75c7\u72b6\u7b49\u7cbe\u795e\u75c5\u6027\u75c7\u72b6\u3002\u8e81\u72c2\u53d1\u4f5c\u65f6\u95f4\u9700\u6301\u7eed\u4e00\u5468\u4ee5\u4e0a\uff0c\u4e00\u822c\u5448\u53d1\u4f5c\u6027\u75c5\u7a0b\n\uff0c\u6bcf\u6b21\u53d1\u4f5c\u540e\u8fdb\u5165\u7cbe\u795e\u72b6\u6001\u6b63\u5e38\u7684\u95f4\u6b47\u7f13\u89e3\u671f\uff0c\u5927\u591a\u6570\u75c5\u4eba\u6709\u53cd\u590d\u53d1\u4f5c\u503e\u5411\u3002\n\u5728\u5fc3\u5883\u969c\u788d\u75c5\u7a0b\u957f\u671f\u89c2\u5bdf\u53d1\u73b0\uff0c\u59cb\u7ec8\u4ec5\u6709\u8e81\u72c2\u6216\u8f7b\u8e81\u72c2\u53d1\u4f5c\u8005\u975e\u5e38\u5c11\u89c1\uff0c\u5e76\u4e14\u8fd9\u4e9b\u60a3\u8005\u7684\u5bb6\u65cf\u53f2\u3001\u75c5\u524d\u4e2a\u6027\u3001\u751f\u7269\u5b66\u7279\u5f81\u3001\u6cbb\u7597\u539f\u5219\u53ca\u9884\n\u540e\u7b49\u4e0e\u517c\u6709\u6291\u90c1\u53d1\u4f5c\u7684\u53cc\u76f8\u969c\u788d\u7c7b\u4f3c\u3002\u56e0\u6b64\uff0c\u7cbe\u795e\u75be\u75c5\u7684\u56fd\u9645\u5206\u7c7b\u6cd5\u7cfb\u7edf(ICD-10)\u548c\u7f8e\u56fd\u5206\u7c7b\u6cd5\u7cfb\u7edf(DSM-\u2163)\u5df2\u5c06\u5176\u5217\u4e3a\n\u53cc\u76f8\u969c\u788d\u7684\u4e00\u79cd\u3002",
+                    "category": 8,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u4e00\u3001\u9057\u4f20\u56e0\u7d20\u3002\n\u4e8c\u3001\u4f53\u8d28\u56e0\u7d20\uff1a\u5faa\u73af\u578b\u4eba\u683c\u7684\u4e3b\u8981\u7279\u5f81\u662f\u597d\u4ea4\u9645\u3001\u5f00\u6717\u3001\u5174\u8da3\u5e7f\u6cdb\u3001\u597d\u52a8\u3001\u6613\u5174\u594b\u4e50\u89c2\u3001\u4e5f\u8f83\u6613\u53d8\u5f97\u5fe7\u8651\u591a\u6101\u3002\u4e2d\u80da\u53f6\u578b\u9aa8\u9abc\u3001\u808c\u8089\u53d1\u8fbe\n\u3001\u7ed3\u7f14\u7ec4\u7ec7\u5145\u5b9e\u7684\u75c5\u4eba\uff0c\u6bd4\u5916\u80da\u53f6\u578b\u4f53\u683c\u7ea4\u7ec6\u5a07\u5f31\u7684\u4eba\u60a3\u75c5\u8f83\u591a\u3002\n\u4e09\u3001\u4e2d\u67a2\u795e\u7ecf\u4ecb\u8d28\u7684\u529f\u80fd\u53ca\u4ee3\u8c22\u5f02\u5e38\u3002\n\uff08\u4e00\uff09\u4e2d\u67a2\u53bb\u7532\u80be\u4e0a\u817a\u7d20\u80fd\u7cfb\u7edf\u529f\u80fd\u5f02\u5e38\u3002\n\uff08\u4e8c\uff09\u4e2d\u67a25\u4e00\u7f9f\u8272\u80fa\u80fd\u7cfb\u7edf\u529f\u80fd\u5f02\u5e38\u3002\n\uff08\u4e09\uff09\u591a\u79cd\u80fa\u4ee3\u8c22\u969c\u788d\u5047\u8bf4\u3002\n\uff08\u56db\uff09\u795e\u7ecf\u5185\u5206\u6ccc\u529f\u80fd\u7d0a\u4e71\u3002\n\u56db\u3001\u7cbe\u795e\u56e0\u7d20\uff1a\n\u8e81\u72c2\u6291\u90c1\u6027\u7cbe\u795e\u75c5\u7684\u53d1\u75c5\u53ef\u80fd\u4e0e\u7cbe\u795e\u523a\u6fc0\u56e0\u7d20\u6709\u5173\uff0c\u4f46\u53ea\u80fd\u770b\u4f5c\u8bf1\u53d1\u56e0\u7d20\u3002|cause",
+                    "des": "\u4e00\u3001\u9057\u4f20\u56e0\u7d20\u3002\n\u4e8c\u3001\u4f53\u8d28\u56e0\u7d20\uff1a\u5faa\u73af\u578b\u4eba\u683c\u7684\u4e3b\u8981\u7279\u5f81\u662f\u597d\u4ea4\u9645\u3001\u5f00\u6717\u3001\u5174\u8da3\u5e7f\u6cdb\u3001\u597d\u52a8\u3001\u6613\u5174\u594b\u4e50\u89c2\u3001\u4e5f\u8f83\u6613\u53d8\u5f97\u5fe7\u8651\u591a\u6101\u3002\u4e2d\u80da\u53f6\u578b\u9aa8\u9abc\u3001\u808c\u8089\u53d1\u8fbe\n\u3001\u7ed3\u7f14\u7ec4\u7ec7\u5145\u5b9e\u7684\u75c5\u4eba\uff0c\u6bd4\u5916\u80da\u53f6\u578b\u4f53\u683c\u7ea4\u7ec6\u5a07\u5f31\u7684\u4eba\u60a3\u75c5\u8f83\u591a\u3002\n\u4e09\u3001\u4e2d\u67a2\u795e\u7ecf\u4ecb\u8d28\u7684\u529f\u80fd\u53ca\u4ee3\u8c22\u5f02\u5e38\u3002\n\uff08\u4e00\uff09\u4e2d\u67a2\u53bb\u7532\u80be\u4e0a\u817a\u7d20\u80fd\u7cfb\u7edf\u529f\u80fd\u5f02\u5e38\u3002\n\uff08\u4e8c\uff09\u4e2d\u67a25\u4e00\u7f9f\u8272\u80fa\u80fd\u7cfb\u7edf\u529f\u80fd\u5f02\u5e38\u3002\n\uff08\u4e09\uff09\u591a\u79cd\u80fa\u4ee3\u8c22\u969c\u788d\u5047\u8bf4\u3002\n\uff08\u56db\uff09\u795e\u7ecf\u5185\u5206\u6ccc\u529f\u80fd\u7d0a\u4e71\u3002\n\u56db\u3001\u7cbe\u795e\u56e0\u7d20\uff1a\n\u8e81\u72c2\u6291\u90c1\u6027\u7cbe\u795e\u75c5\u7684\u53d1\u75c5\u53ef\u80fd\u4e0e\u7cbe\u795e\u523a\u6fc0\u56e0\u7d20\u6709\u5173\uff0c\u4f46\u53ea\u80fd\u770b\u4f5c\u8bf1\u53d1\u56e0\u7d20\u3002",
+                    "category": 2,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u836f\u7269\u6cbb\u7597\uff1a\n(\u4e00)\u6297\u7cbe\u795e\u75c5\u836f\u6cbb\u7597\uff1a\n\u9002\u7528\u4e8e\u8e81\u72c2\u75c7\u75c5\u4eba\uff0c\u5c24\u5176\u662f\u7cbe\u795e\u8fd0\u52a8\u6027\u5174\u594b\u75c7\u72b6\u660e\u663e\u7684\u75c5\u4eba\u3002\u5e38\u7528\u836f\u7269\u6709\u6c2f\u4e19\u55ea\u3001\u6c1f\u54cc\u5576\u9187\u3001\u6c2f\u6c2e\u5e73\uff0c\u4e00\u822c\u53ef\u53e3\u670d\u7ed9\u836f\uff0c\u6709\u660e\u663e\u5174\u594b\u75c7\u72b6\n\u8005\u53ef\u7528\u808c\u8089\u6ce8\u5c04\u7ed9\u836f\u3002\n(\u4e8c)\u9502\u76d0\u6cbb\u7597\uff1a\u5e38\u7528\u7684\u9502\u76d0\u5236\u5242\u662f\u78b3\u9178\u9502\u3002|treatment",
+                    "des": "\u836f\u7269\u6cbb\u7597\uff1a\n(\u4e00)\u6297\u7cbe\u795e\u75c5\u836f\u6cbb\u7597\uff1a\n\u9002\u7528\u4e8e\u8e81\u72c2\u75c7\u75c5\u4eba\uff0c\u5c24\u5176\u662f\u7cbe\u795e\u8fd0\u52a8\u6027\u5174\u594b\u75c7\u72b6\u660e\u663e\u7684\u75c5\u4eba\u3002\u5e38\u7528\u836f\u7269\u6709\u6c2f\u4e19\u55ea\u3001\u6c1f\u54cc\u5576\u9187\u3001\u6c2f\u6c2e\u5e73\uff0c\u4e00\u822c\u53ef\u53e3\u670d\u7ed9\u836f\uff0c\u6709\u660e\u663e\u5174\u594b\u75c7\u72b6\n\u8005\u53ef\u7528\u808c\u8089\u6ce8\u5c04\u7ed9\u836f\u3002\n(\u4e8c)\u9502\u76d0\u6cbb\u7597\uff1a\u5e38\u7528\u7684\u9502\u76d0\u5236\u5242\u662f\u78b3\u9178\u9502\u3002",
+                    "category": 1,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u4e00\u822c\u6709\u9057\u4f20\u75c5\u53f2\uff0c\u6027\u683c\u5185\u5411\uff0c\u5b64\u50fb\uff0c\u654f\u611f\uff0c\u73af\u5883\u9002\u5e94\u80fd\u529b\u5dee\uff0c\u4ee5\u53ca\u53d7\u5230\u8fc7\u7cbe\u795e\u523a\u6fc0\u7684\u4eba\u5bb9\u6613\u60a3\u4e0a\u8e81\u72c2\u75c7\uff0c\u9488\u5bf9\u8fd9\u4e9b\u75c5\u56e0\uff0c\u8981\u63a7\u5236\u6216\u8005\u9884\u9632\n\u8e81\u72c2\u75c7\u6709\u4e00\u4e9b\u9488\u5bf9\u6027\u7684\u529e\u6cd5\uff0c\u6709\u9057\u4f20\u53f2\u7684\u5e02\u6c11\u5fc5\u987b\u65f6\u523b\u5907\u6709\u9884\u9632\u610f\u8bc6\uff0c\u8b66\u60d5\u75c5\u60c5\u53d1\u4f5c\uff0c\u53ca\u65f6\u6cbb\u7597\uff0c\u4ece\u5c0f\u57f9\u517b\u5f00\u6717\uff0c\u8c41\u8fbe\uff0c\u5bb9\u7eb3\u7684\u6027\u683c\uff0c\u7edd\n\u5bf9\u6709\u6548\u9884\u9632\u8e81\u72c2\u75c7\u7684\u53d1\u751f\uff0c\u52aa\u529b\u4e3a\u81ea\u5df1\u8425\u9020\u4e00\u4e2a\u826f\u597d\u7684\u4eba\u9645\u5173\u7cfb\u73af\u5883\uff0c\u9047\u5230\u95ee\u9898\u8fa8\u8bc1\u770b\u5f85\uff0c\u201c\u6bcf\u4e00\u6735\u4e4c\u4e91\u90fd\u9576\u6709\u91d1\u8fb9\u201d\uff0c\u4e8b\u7269\u603b\u6709\u7f8e\u597d\u7684\n\u4e00\u9762\u3002|prevent",
+                    "des": "\u4e00\u822c\u6709\u9057\u4f20\u75c5\u53f2\uff0c\u6027\u683c\u5185\u5411\uff0c\u5b64\u50fb\uff0c\u654f\u611f\uff0c\u73af\u5883\u9002\u5e94\u80fd\u529b\u5dee\uff0c\u4ee5\u53ca\u53d7\u5230\u8fc7\u7cbe\u795e\u523a\u6fc0\u7684\u4eba\u5bb9\u6613\u60a3\u4e0a\u8e81\u72c2\u75c7\uff0c\u9488\u5bf9\u8fd9\u4e9b\u75c5\u56e0\uff0c\u8981\u63a7\u5236\u6216\u8005\u9884\u9632\n\u8e81\u72c2\u75c7\u6709\u4e00\u4e9b\u9488\u5bf9\u6027\u7684\u529e\u6cd5\uff0c\u6709\u9057\u4f20\u53f2\u7684\u5e02\u6c11\u5fc5\u987b\u65f6\u523b\u5907\u6709\u9884\u9632\u610f\u8bc6\uff0c\u8b66\u60d5\u75c5\u60c5\u53d1\u4f5c\uff0c\u53ca\u65f6\u6cbb\u7597\uff0c\u4ece\u5c0f\u57f9\u517b\u5f00\u6717\uff0c\u8c41\u8fbe\uff0c\u5bb9\u7eb3\u7684\u6027\u683c\uff0c\u7edd\n\u5bf9\u6709\u6548\u9884\u9632\u8e81\u72c2\u75c7\u7684\u53d1\u751f\uff0c\u52aa\u529b\u4e3a\u81ea\u5df1\u8425\u9020\u4e00\u4e2a\u826f\u597d\u7684\u4eba\u9645\u5173\u7cfb\u73af\u5883\uff0c\u9047\u5230\u95ee\u9898\u8fa8\u8bc1\u770b\u5f85\uff0c\u201c\u6bcf\u4e00\u6735\u4e4c\u4e91\u90fd\u9576\u6709\u91d1\u8fb9\u201d\uff0c\u4e8b\u7269\u603b\u6709\u7f8e\u597d\u7684\n\u4e00\u9762\u3002",
+                    "category": 4,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u9885\u8111CT\u68c0\u67e5\uff0c\u795e\u7ecf\u7cfb\u7edf\u68c0\u67e5|check",
+                    "des": "\u9885\u8111CT\u68c0\u67e5\uff0c\u795e\u7ecf\u7cfb\u7edf\u68c0\u67e5",
+                    "category": 7,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u6c2f\u4e19\u55ea|drug",
+                    "des": "\u6c2f\u4e19\u55ea",
+                    "category": 5,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u6c1f\u54cc\u5576\u9187|drug",
+                    "des": "\u6c1f\u54cc\u5576\u9187",
+                    "category": 5,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u6c2f\u6c2e\u5e73|drug",
+                    "des": "\u6c2f\u6c2e\u5e73",
+                    "category": 5,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u63a7\u5236\u4e0d\u4f4f\u7684\u8054\u60f3|symptom",
+                    "des": "\u63a7\u5236\u4e0d\u4f4f\u7684\u8054\u60f3",
+                    "category": 6,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u601d\u7ef4\u5954\u9038|symptom",
+                    "des": "\u601d\u7ef4\u5954\u9038",
+                    "category": 6,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u60c5\u7eea\u8d77\u4f0f\u5927|symptom",
+                    "des": "\u60c5\u7eea\u8d77\u4f0f\u5927",
+                    "category": 6,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u653b\u51fb\u884c\u4e3a|symptom",
+                    "des": "\u653b\u51fb\u884c\u4e3a",
+                    "category": 6,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u884c\u4e3a\u53ca\u60c5\u7eea\u5f02\u5e38|symptom",
+                    "des": "\u884c\u4e3a\u53ca\u60c5\u7eea\u5f02\u5e38",
+                    "category": 6,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u6613\u6fc0\u60f9|symptom",
+                    "des": "\u6613\u6fc0\u60f9",
+                    "category": 6,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u5fc3\u5883\u9ad8\u6da8|symptom",
+                    "des": "\u5fc3\u5883\u9ad8\u6da8",
+                    "category": 6,
+                    "symbolSize": 70
+                }
+            ],
+            "categories": [
+                {},
+                {
+                    "name": "treatment"
+                },
+                {
+                    "name": "cause"
+                },
+                {
+                    "name": "disease"
+                },
+                {
+                    "name": "prevent"
+                },
+                {
+                    "name": "drug"
+                },
+                {
+                    "name": "symptom"
+                },
+                {
+                    "name": "check"
+                },
+                {
+                    "name": "desc"
+                }
+            ],
+            "edgeLabel": {
+                "show": true,
+                "margin": 8,
+                "formatter": function (x) {return x.data.name;}
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": [
+                4,
+                10
+            ],
+            "links": [
+                {
+                    "source": "\u8e81\u72c2\u75c7|disease",
+                    "target": "treatment|centernode",
+                    "name": "treatment"
+                },
+                {
+                    "source": "\u8e81\u72c2\u75c7|disease",
+                    "target": "cause|centernode",
+                    "name": "cause"
+                },
+                {
+                    "source": "\u8e81\u72c2\u75c7|disease",
+                    "target": "has_symptom|centernode",
+                    "name": "has_symptom"
+                },
+                {
+                    "source": "\u8e81\u72c2\u75c7|disease",
+                    "target": "prevent|centernode",
+                    "name": "prevent"
+                },
+                {
+                    "source": "\u8e81\u72c2\u75c7|disease",
+                    "target": "recommend_drug|centernode",
+                    "name": "recommend_drug"
+                },
+                {
+                    "source": "\u8e81\u72c2\u75c7|disease",
+                    "target": "check|centernode",
+                    "name": "check"
+                },
+                {
+                    "source": "\u8e81\u72c2\u75c7|disease",
+                    "target": "desc|centernode",
+                    "name": "desc"
+                },
+                {
+                    "source": "desc|centernode",
+                    "target": "\u8e81\u72c2\u75c7\u662f\u8e81\u72c2\u6291\u90c1\u75c7\u7684\u4e00\u79cd\u53d1\u4f5c\u5f62\u5f0f\u3002\u4ee5\u60c5\u611f\u9ad8\u6da8\u3001\u601d\u7ef4\u5954\u9038\u3001\u4ee5\u53ca\u8a00\u8bed\u52a8\u4f5c\u589e\u591a\u4e3a\u5178\u578b\u75c7\u72b6\u3002\u4ee5\u60c5\u611f\u9ad8\u6da8\u6216\u6613\u6fc0\u60f9\u4e3a\u4e3b\u8981\u4e34\u5e8a\u76f8\uff0c\u4f34\u968f\n\u7cbe\u529b\u65fa\u76db\u3001\u8a00\u8bed\u589e\u591a\u3001\u6d3b\u52a8\u589e\u591a\uff0c\u4e25\u91cd\u65f6\u4f34\u6709\u5e7b\u89c9\u3001\u5984\u60f3\u3001\u7d27\u5f20\u75c7\u72b6\u7b49\u7cbe\u795e\u75c5\u6027\u75c7\u72b6\u3002\u8e81\u72c2\u53d1\u4f5c\u65f6\u95f4\u9700\u6301\u7eed\u4e00\u5468\u4ee5\u4e0a\uff0c\u4e00\u822c\u5448\u53d1\u4f5c\u6027\u75c5\u7a0b\n\uff0c\u6bcf\u6b21\u53d1\u4f5c\u540e\u8fdb\u5165\u7cbe\u795e\u72b6\u6001\u6b63\u5e38\u7684\u95f4\u6b47\u7f13\u89e3\u671f\uff0c\u5927\u591a\u6570\u75c5\u4eba\u6709\u53cd\u590d\u53d1\u4f5c\u503e\u5411\u3002\n\u5728\u5fc3\u5883\u969c\u788d\u75c5\u7a0b\u957f\u671f\u89c2\u5bdf\u53d1\u73b0\uff0c\u59cb\u7ec8\u4ec5\u6709\u8e81\u72c2\u6216\u8f7b\u8e81\u72c2\u53d1\u4f5c\u8005\u975e\u5e38\u5c11\u89c1\uff0c\u5e76\u4e14\u8fd9\u4e9b\u60a3\u8005\u7684\u5bb6\u65cf\u53f2\u3001\u75c5\u524d\u4e2a\u6027\u3001\u751f\u7269\u5b66\u7279\u5f81\u3001\u6cbb\u7597\u539f\u5219\u53ca\u9884\n\u540e\u7b49\u4e0e\u517c\u6709\u6291\u90c1\u53d1\u4f5c\u7684\u53cc\u76f8\u969c\u788d\u7c7b\u4f3c\u3002\u56e0\u6b64\uff0c\u7cbe\u795e\u75be\u75c5\u7684\u56fd\u9645\u5206\u7c7b\u6cd5\u7cfb\u7edf(ICD-10)\u548c\u7f8e\u56fd\u5206\u7c7b\u6cd5\u7cfb\u7edf(DSM-\u2163)\u5df2\u5c06\u5176\u5217\u4e3a\n\u53cc\u76f8\u969c\u788d\u7684\u4e00\u79cd\u3002|desc",
+                    "name": " "
+                },
+                {
+                    "source": "cause|centernode",
+                    "target": "\u4e00\u3001\u9057\u4f20\u56e0\u7d20\u3002\n\u4e8c\u3001\u4f53\u8d28\u56e0\u7d20\uff1a\u5faa\u73af\u578b\u4eba\u683c\u7684\u4e3b\u8981\u7279\u5f81\u662f\u597d\u4ea4\u9645\u3001\u5f00\u6717\u3001\u5174\u8da3\u5e7f\u6cdb\u3001\u597d\u52a8\u3001\u6613\u5174\u594b\u4e50\u89c2\u3001\u4e5f\u8f83\u6613\u53d8\u5f97\u5fe7\u8651\u591a\u6101\u3002\u4e2d\u80da\u53f6\u578b\u9aa8\u9abc\u3001\u808c\u8089\u53d1\u8fbe\n\u3001\u7ed3\u7f14\u7ec4\u7ec7\u5145\u5b9e\u7684\u75c5\u4eba\uff0c\u6bd4\u5916\u80da\u53f6\u578b\u4f53\u683c\u7ea4\u7ec6\u5a07\u5f31\u7684\u4eba\u60a3\u75c5\u8f83\u591a\u3002\n\u4e09\u3001\u4e2d\u67a2\u795e\u7ecf\u4ecb\u8d28\u7684\u529f\u80fd\u53ca\u4ee3\u8c22\u5f02\u5e38\u3002\n\uff08\u4e00\uff09\u4e2d\u67a2\u53bb\u7532\u80be\u4e0a\u817a\u7d20\u80fd\u7cfb\u7edf\u529f\u80fd\u5f02\u5e38\u3002\n\uff08\u4e8c\uff09\u4e2d\u67a25\u4e00\u7f9f\u8272\u80fa\u80fd\u7cfb\u7edf\u529f\u80fd\u5f02\u5e38\u3002\n\uff08\u4e09\uff09\u591a\u79cd\u80fa\u4ee3\u8c22\u969c\u788d\u5047\u8bf4\u3002\n\uff08\u56db\uff09\u795e\u7ecf\u5185\u5206\u6ccc\u529f\u80fd\u7d0a\u4e71\u3002\n\u56db\u3001\u7cbe\u795e\u56e0\u7d20\uff1a\n\u8e81\u72c2\u6291\u90c1\u6027\u7cbe\u795e\u75c5\u7684\u53d1\u75c5\u53ef\u80fd\u4e0e\u7cbe\u795e\u523a\u6fc0\u56e0\u7d20\u6709\u5173\uff0c\u4f46\u53ea\u80fd\u770b\u4f5c\u8bf1\u53d1\u56e0\u7d20\u3002|cause",
+                    "name": " "
+                },
+                {
+                    "source": "treatment|centernode",
+                    "target": "\u836f\u7269\u6cbb\u7597\uff1a\n(\u4e00)\u6297\u7cbe\u795e\u75c5\u836f\u6cbb\u7597\uff1a\n\u9002\u7528\u4e8e\u8e81\u72c2\u75c7\u75c5\u4eba\uff0c\u5c24\u5176\u662f\u7cbe\u795e\u8fd0\u52a8\u6027\u5174\u594b\u75c7\u72b6\u660e\u663e\u7684\u75c5\u4eba\u3002\u5e38\u7528\u836f\u7269\u6709\u6c2f\u4e19\u55ea\u3001\u6c1f\u54cc\u5576\u9187\u3001\u6c2f\u6c2e\u5e73\uff0c\u4e00\u822c\u53ef\u53e3\u670d\u7ed9\u836f\uff0c\u6709\u660e\u663e\u5174\u594b\u75c7\u72b6\n\u8005\u53ef\u7528\u808c\u8089\u6ce8\u5c04\u7ed9\u836f\u3002\n(\u4e8c)\u9502\u76d0\u6cbb\u7597\uff1a\u5e38\u7528\u7684\u9502\u76d0\u5236\u5242\u662f\u78b3\u9178\u9502\u3002|treatment",
+                    "name": " "
+                },
+                {
+                    "source": "prevent|centernode",
+                    "target": "\u4e00\u822c\u6709\u9057\u4f20\u75c5\u53f2\uff0c\u6027\u683c\u5185\u5411\uff0c\u5b64\u50fb\uff0c\u654f\u611f\uff0c\u73af\u5883\u9002\u5e94\u80fd\u529b\u5dee\uff0c\u4ee5\u53ca\u53d7\u5230\u8fc7\u7cbe\u795e\u523a\u6fc0\u7684\u4eba\u5bb9\u6613\u60a3\u4e0a\u8e81\u72c2\u75c7\uff0c\u9488\u5bf9\u8fd9\u4e9b\u75c5\u56e0\uff0c\u8981\u63a7\u5236\u6216\u8005\u9884\u9632\n\u8e81\u72c2\u75c7\u6709\u4e00\u4e9b\u9488\u5bf9\u6027\u7684\u529e\u6cd5\uff0c\u6709\u9057\u4f20\u53f2\u7684\u5e02\u6c11\u5fc5\u987b\u65f6\u523b\u5907\u6709\u9884\u9632\u610f\u8bc6\uff0c\u8b66\u60d5\u75c5\u60c5\u53d1\u4f5c\uff0c\u53ca\u65f6\u6cbb\u7597\uff0c\u4ece\u5c0f\u57f9\u517b\u5f00\u6717\uff0c\u8c41\u8fbe\uff0c\u5bb9\u7eb3\u7684\u6027\u683c\uff0c\u7edd\n\u5bf9\u6709\u6548\u9884\u9632\u8e81\u72c2\u75c7\u7684\u53d1\u751f\uff0c\u52aa\u529b\u4e3a\u81ea\u5df1\u8425\u9020\u4e00\u4e2a\u826f\u597d\u7684\u4eba\u9645\u5173\u7cfb\u73af\u5883\uff0c\u9047\u5230\u95ee\u9898\u8fa8\u8bc1\u770b\u5f85\uff0c\u201c\u6bcf\u4e00\u6735\u4e4c\u4e91\u90fd\u9576\u6709\u91d1\u8fb9\u201d\uff0c\u4e8b\u7269\u603b\u6709\u7f8e\u597d\u7684\n\u4e00\u9762\u3002|prevent",
+                    "name": " "
+                },
+                {
+                    "source": "check|centernode",
+                    "target": "\u9885\u8111CT\u68c0\u67e5\uff0c\u795e\u7ecf\u7cfb\u7edf\u68c0\u67e5|check",
+                    "name": " "
+                },
+                {
+                    "source": "recommend_drug|centernode",
+                    "target": "\u6c2f\u4e19\u55ea|drug",
+                    "name": " "
+                },
+                {
+                    "source": "recommend_drug|centernode",
+                    "target": "\u6c1f\u54cc\u5576\u9187|drug",
+                    "name": " "
+                },
+                {
+                    "source": "recommend_drug|centernode",
+                    "target": "\u6c2f\u6c2e\u5e73|drug",
+                    "name": " "
+                },
+                {
+                    "source": "has_symptom|centernode",
+                    "target": "\u63a7\u5236\u4e0d\u4f4f\u7684\u8054\u60f3|symptom",
+                    "name": " "
+                },
+                {
+                    "source": "has_symptom|centernode",
+                    "target": "\u601d\u7ef4\u5954\u9038|symptom",
+                    "name": " "
+                },
+                {
+                    "source": "has_symptom|centernode",
+                    "target": "\u60c5\u7eea\u8d77\u4f0f\u5927|symptom",
+                    "name": " "
+                },
+                {
+                    "source": "has_symptom|centernode",
+                    "target": "\u653b\u51fb\u884c\u4e3a|symptom",
+                    "name": " "
+                },
+                {
+                    "source": "has_symptom|centernode",
+                    "target": "\u884c\u4e3a\u53ca\u60c5\u7eea\u5f02\u5e38|symptom",
+                    "name": " "
+                },
+                {
+                    "source": "has_symptom|centernode",
+                    "target": "\u6613\u6fc0\u60f9|symptom",
+                    "name": " "
+                },
+                {
+                    "source": "has_symptom|centernode",
+                    "target": "\u5fc3\u5883\u9ad8\u6da8|symptom",
+                    "name": " "
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "formatter": function (x) { if(x.dataType === 'edge'){return x.data.name;} var strs = x.data.des;  var str = ''; for(var i = 0, s; s = strs[i++];) { if(i==500){str+='...'; break;} str += s; if(!(i % 50)) str += '<br>'; } return str;},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "treatment",
+                "cause",
+                "disease",
+                "prevent",
+                "drug",
+                "symptom",
+                "check",
+                "desc"
+            ],
+            "selected": {
+                "": true,
+                "treatment": true,
+                "cause": true,
+                "disease": true,
+                "prevent": true,
+                "drug": true,
+                "symptom": true,
+                "check": true,
+                "desc": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u8e81\u72c2\u75c7\u76f8\u5173\u77e5\u8bc6\u56fe\u8c31",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_34937b6470ca4004b8e1fe6d5c08b112.setOption(option_34937b6470ca4004b8e1fe6d5c08b112);
+    </script>
+</body>
+</html>

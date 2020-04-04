@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/data/drug/卡马西平片.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/data/symptom/乐趣丧失.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/dict/disease.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/dict/drug.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/dict/symptoms.txt" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/x.py" charset="UTF-8" />
-    <file url="PROJECT" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

@@ -9,9 +9,9 @@ class QuestionClassifier:
         self.drug_path = os.path.join(cur_dir, 'dict/drug.txt')
         self.symptom_path = os.path.join(cur_dir, 'dict/symptoms.txt')
         # 加载特征词
-        self.disease_wds= [i.strip() for i in open(self.disease_path) if i.strip()]
-        self.drug_wds= [i.strip() for i in open(self.drug_path) if i.strip()]
-        self.symptom_wds= [i.strip() for i in open(self.symptom_path) if i.strip()]
+        self.disease_wds= [i.strip() for i in open(self.disease_path,encoding="gbk") if i.strip()]
+        self.drug_wds= [i.strip() for i in open(self.drug_path,encoding="gbk") if i.strip()]
+        self.symptom_wds= [i.strip() for i in open(self.symptom_path,encoding="gbk") if i.strip()]
         self.region_words = set(self.disease_wds + self.drug_wds  +  self.symptom_wds)
         # 构造领域actree
         self.region_tree = self.build_actree(list(self.region_words))#只是对医疗的实体构建actree，不对下面的口语建
@@ -118,7 +118,7 @@ class QuestionClassifier:
 
         # 将多个分类结果进行合并处理，组装成一个字典
         data['question_types'] = question_types
-        print(question_types)
+        #print(question_types)
         return data
 
     '''构造词对应的类型'''

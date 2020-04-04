@@ -57,6 +57,7 @@ class CreateEcharts:
             if len(ress)==0 or '' in ress[0].values():#没查到
                 continue
             for r in ress:
+                print(r)
                 if(len(list(r.keys()))==2):#代表前五项
                     answers.append([list(r.keys())[1].split('.')[1],r[list(r.keys())[1]]])
                 else:#代表药品和症状
@@ -342,4 +343,4 @@ class CreateEcharts:
 
 if __name__ == '__main__':
     searcher = CreateEcharts()
-    searcher.create_drug()
+    searcher.create_disease("双相情感障碍","templates//echarts//render1"+".html")

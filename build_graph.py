@@ -48,6 +48,7 @@ def deal_question():
     handler = ChatBotGraph()
     answer=handler.chat_main(get_q)
     return render_template("templates/index2.html", question=get_q,result=answer)
+    #return answer
 
 
 @app.route('/deal_request', methods = ['GET', 'POST'])
@@ -56,17 +57,17 @@ def deal_request():
     id= int(request.args.get("id", ""))
     url="templates//echarts//render"+str(id)+".html"
     searcher = CreateEcharts()
-    if id>=1 and id<=20:
+    if id>=1 and id<=111:
         searcher.create_disease(key_name,url)
-    if id>=21 and id<=82:
+    if id>=112 and id<=216:
         searcher.create_drug(key_name,url)
-    if id>=83 and id<=184:
+    if id>=217 and id<=589:
         searcher.create_symptom(key_name,url)
 
     return render_template(url)
 
 
 if __name__ == '__main__':
-    # app.run(host, port, debug, options)
+    #app.run("0.0.0.0","5000")
     # 默认值：host=127.0.0.1, port=5000, debug=false
     app.run()

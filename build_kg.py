@@ -48,18 +48,20 @@ class MedicalGraph:
 
 
             if 'symptoms' in data_json:
-                temp=data_json['symptoms']
-                temp=temp.split("，")
-                symptoms += temp
-                for symptom in temp:
-                    rels_symptom.append([disease, symptom])
+                if data_json['symptoms']!="":
+                    temp=data_json['symptoms']
+                    temp=re.split("，|,",temp)
+                    symptoms += temp
+                    for symptom in temp:
+                        rels_symptom.append([disease, symptom])
 
             if 'drug' in data_json:
-                temp = data_json['drug']
-                temp = temp.split("，")
-                drugs += temp
-                for drug in temp:
-                    rels_drug.append([disease, drug])
+                if data_json['drug'] != "":
+                    temp = data_json['drug']
+                    temp = re.split("，|,",temp)
+                    drugs += temp
+                    for drug in temp:
+                        rels_drug.append([disease, drug])
 
             if 'desc' in data_json:
                 disease_dict['desc'] = data_json['desc']

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="2dc25793bd8f4caca19ea8000f20d455" class="chart-container" style="width:100%; height:700px;"></div>
+    <script>
+        var chart_2dc25793bd8f4caca19ea8000f20d455 = echarts.init(
+            document.getElementById('2dc25793bd8f4caca19ea8000f20d455'), 'white', {renderer: 'canvas'});
+        var option_2dc25793bd8f4caca19ea8000f20d455 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 2500,
+                "edgeLength": 50,
+                "gravity": 0.2
+            },
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "formatter": function (x) { var strs = x.data.name;   var n='';    var str='centernode';   if(strs.search(str)!=-1) {return  n;}   var strs = x.data.name.split('|')[0];  if(strs.length<=6){                       return strs;                   }else {                       name = strs.slice(0,6) + '...';                        return name;                   }}
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": true,
+            "focusNodeAdjacency": "true",
+            "data": [
+                {
+                    "name": "\u7ecf\u524d\u5934\u75db|symptom",
+                    "des": "\u7ecf\u524d\u5934\u75db",
+                    "category": 1,
+                    "symbolSize": 90
+                },
+                {
+                    "name": "accompany_disease|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "desc|centernode",
+                    "symbolSize": 30
+                },
+                {
+                    "name": "\u7ecf\u884c\u5934\u75db \uff08menstrual headache\uff09\u4e3a\u75c5\u8bc1\u540d\u3002\u4ea6\u540d\u7ecf\u6765\u5934\u75db\uff0c\u7ecf\u884c\u8f84\u5934\u75db\u3002\n\u300a\u4e2d\u533b\u836f\u5b66\u540d\u8bcd\u300b\uff082004\uff09\uff1a\u7ecf\u884c\u5934\u75db\u662f\u6307\u4ee5\u7ecf\u524d\u6216\u7ecf\u671f\u51fa\u73b0\u5468\u671f\u6027\u5934\u75db\u4e3a\u4e3b\u8981\u8868\u73b0\u7684\u6708\u7ecf\u75c5\u3002\n\u300a\u4e2d\u533b\u836f\u5b66\u540d\u8bcd\u300b\uff082010\uff09\uff1a\u7ecf\u884c\u5934\u75db\u662f\u6307\u4ee5\u6708\u7ecf\u524d\u540e\u6216\u7ecf\u671f\u51fa\u73b0\u5468\u671f\u6027\u5934\u75db\u4e3a\u5e38\u89c1\u75c7\u7684\u6708\u7ecf\u75c5\u3002\n\u6bcf\u4e8e\u7ecf\u671f\u6216\u7ecf\u671f\u524d\u540e\uff0c\u51fa\u73b0\u4ee5\u5934\u75db\u4e3a\u4e3b\u8bc1\u8005\uff0c\u79f0\u4e3a\u7ecf\u884c\u5934\u75db\u3002\u7ecf\u884c\u5934\u75db\u5c5e\u4e8e\u897f\u533b\u7684\u7ecf\u524d\u671f\u7d27\u5f20\u7efc\u5408\u5f81\u7684\u8303\u7574\u3002|desc",
+                    "des": "\u7ecf\u884c\u5934\u75db \uff08menstrual headache\uff09\u4e3a\u75c5\u8bc1\u540d\u3002\u4ea6\u540d\u7ecf\u6765\u5934\u75db\uff0c\u7ecf\u884c\u8f84\u5934\u75db\u3002\n\u300a\u4e2d\u533b\u836f\u5b66\u540d\u8bcd\u300b\uff082004\uff09\uff1a\u7ecf\u884c\u5934\u75db\u662f\u6307\u4ee5\u7ecf\u524d\u6216\u7ecf\u671f\u51fa\u73b0\u5468\u671f\u6027\u5934\u75db\u4e3a\u4e3b\u8981\u8868\u73b0\u7684\u6708\u7ecf\u75c5\u3002\n\u300a\u4e2d\u533b\u836f\u5b66\u540d\u8bcd\u300b\uff082010\uff09\uff1a\u7ecf\u884c\u5934\u75db\u662f\u6307\u4ee5\u6708\u7ecf\u524d\u540e\u6216\u7ecf\u671f\u51fa\u73b0\u5468\u671f\u6027\u5934\u75db\u4e3a\u5e38\u89c1\u75c7\u7684\u6708\u7ecf\u75c5\u3002\n\u6bcf\u4e8e\u7ecf\u671f\u6216\u7ecf\u671f\u524d\u540e\uff0c\u51fa\u73b0\u4ee5\u5934\u75db\u4e3a\u4e3b\u8bc1\u8005\uff0c\u79f0\u4e3a\u7ecf\u884c\u5934\u75db\u3002\u7ecf\u884c\u5934\u75db\u5c5e\u4e8e\u897f\u533b\u7684\u7ecf\u524d\u671f\u7d27\u5f20\u7efc\u5408\u5f81\u7684\u8303\u7574\u3002",
+                    "category": 2,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u7ecf\u524d\u5fc3\u5883\u6076\u52a3\u969c\u788d|disease",
+                    "des": "\u7ecf\u524d\u5fc3\u5883\u6076\u52a3\u969c\u788d",
+                    "category": 3,
+                    "symbolSize": 70
+                }
+            ],
+            "categories": [
+                {},
+                {
+                    "name": "symptom"
+                },
+                {
+                    "name": "desc"
+                },
+                {
+                    "name": "disease"
+                }
+            ],
+            "edgeLabel": {
+                "show": true,
+                "margin": 8,
+                "formatter": function (x) {return x.data.name;}
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": [
+                4,
+                10
+            ],
+            "links": [
+                {
+                    "source": "\u7ecf\u524d\u5934\u75db|symptom",
+                    "target": "accompany_disease|centernode",
+                    "name": "accompany_disease"
+                },
+                {
+                    "source": "\u7ecf\u524d\u5934\u75db|symptom",
+                    "target": "desc|centernode",
+                    "name": "desc"
+                },
+                {
+                    "source": "desc|centernode",
+                    "target": "\u7ecf\u884c\u5934\u75db \uff08menstrual headache\uff09\u4e3a\u75c5\u8bc1\u540d\u3002\u4ea6\u540d\u7ecf\u6765\u5934\u75db\uff0c\u7ecf\u884c\u8f84\u5934\u75db\u3002\n\u300a\u4e2d\u533b\u836f\u5b66\u540d\u8bcd\u300b\uff082004\uff09\uff1a\u7ecf\u884c\u5934\u75db\u662f\u6307\u4ee5\u7ecf\u524d\u6216\u7ecf\u671f\u51fa\u73b0\u5468\u671f\u6027\u5934\u75db\u4e3a\u4e3b\u8981\u8868\u73b0\u7684\u6708\u7ecf\u75c5\u3002\n\u300a\u4e2d\u533b\u836f\u5b66\u540d\u8bcd\u300b\uff082010\uff09\uff1a\u7ecf\u884c\u5934\u75db\u662f\u6307\u4ee5\u6708\u7ecf\u524d\u540e\u6216\u7ecf\u671f\u51fa\u73b0\u5468\u671f\u6027\u5934\u75db\u4e3a\u5e38\u89c1\u75c7\u7684\u6708\u7ecf\u75c5\u3002\n\u6bcf\u4e8e\u7ecf\u671f\u6216\u7ecf\u671f\u524d\u540e\uff0c\u51fa\u73b0\u4ee5\u5934\u75db\u4e3a\u4e3b\u8bc1\u8005\uff0c\u79f0\u4e3a\u7ecf\u884c\u5934\u75db\u3002\u7ecf\u884c\u5934\u75db\u5c5e\u4e8e\u897f\u533b\u7684\u7ecf\u524d\u671f\u7d27\u5f20\u7efc\u5408\u5f81\u7684\u8303\u7574\u3002|desc",
+                    "name": " "
+                },
+                {
+                    "source": "accompany_disease|centernode",
+                    "target": "\u7ecf\u524d\u5fc3\u5883\u6076\u52a3\u969c\u788d|disease",
+                    "name": " "
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "formatter": function (x) { if(x.dataType === 'edge'){return x.data.name;} var strs = x.data.des;  var str = ''; for(var i = 0, s; s = strs[i++];) { if(i==500){str+='...'; break;} str += s; if(!(i % 50)) str += '<br>'; } return str;},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "symptom",
+                "desc",
+                "disease"
+            ],
+            "selected": {
+                "": true,
+                "symptom": true,
+                "desc": true,
+                "disease": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u7ecf\u524d\u5934\u75db\u76f8\u5173\u77e5\u8bc6\u56fe\u8c31",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_2dc25793bd8f4caca19ea8000f20d455.setOption(option_2dc25793bd8f4caca19ea8000f20d455);
+    </script>
+</body>
+</html>

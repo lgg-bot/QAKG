@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="8588d2bfabb34633a133a429d5d1c768" class="chart-container" style="width:100%; height:700px;"></div>
+    <script>
+        var chart_8588d2bfabb34633a133a429d5d1c768 = echarts.init(
+            document.getElementById('8588d2bfabb34633a133a429d5d1c768'), 'white', {renderer: 'canvas'});
+        var option_8588d2bfabb34633a133a429d5d1c768 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 2500,
+                "edgeLength": 50,
+                "gravity": 0.2
+            },
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "formatter": function (x) { var strs = x.data.name;   var n='';    var str='centernode';   if(strs.search(str)!=-1) {return  n;}   var strs = x.data.name.split('|')[0];  if(strs.length<=6){                       return strs;                   }else {                       name = strs.slice(0,6) + '...';                        return name;                   }}
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": true,
+            "focusNodeAdjacency": "true",
+            "data": [
+                {
+                    "name": "\u5a74\u513f\u5065\u813e\u9897\u7c92|drug",
+                    "des": "\u5a74\u513f\u5065\u813e\u9897\u7c92",
+                    "category": 6,
+                    "symbolSize": 90
+                },
+                {
+                    "name": "use|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "uneffect|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "attention|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "forbid|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "cure_disease|centernode",
+                    "symbolSize": 20
+                },
+                {
+                    "name": "\u53e3\u670d\u30021\u5c81\u4ee5\u4e0b\u6bcf\u6b211\u514b\uff0c1\u5c81\u81f33\u5c81\u6bcf\u6b214\u514b\uff0c4\u5c81\u81f37\u5c81\u6bcf\u6b218\u514b\uff0c\u6bcf\u65e52\u6b21\u3002|use",
+                    "des": "\u53e3\u670d\u30021\u5c81\u4ee5\u4e0b\u6bcf\u6b211\u514b\uff0c1\u5c81\u81f33\u5c81\u6bcf\u6b214\u514b\uff0c4\u5c81\u81f37\u5c81\u6bcf\u6b218\u514b\uff0c\u6bcf\u65e52\u6b21\u3002",
+                    "category": 1,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u5c1a\u4e0d\u660e\u786e\u3002|uneffect",
+                    "des": "\u5c1a\u4e0d\u660e\u786e\u3002",
+                    "category": 2,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u7cd6\u5c3f\u75c5\u60a3\u513f\u7981\u670d\u3002|forbid",
+                    "des": "\u7cd6\u5c3f\u75c5\u60a3\u513f\u7981\u670d\u3002",
+                    "category": 5,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "1.\u5fcc\u8f9b\u8fa3\u3001\u751f\u51b7\u3001\u6cb9\u817b\u53ca\u4e0d\u6613\u6d88\u5316\u7b49\u98df\u7269\u3002\n2.\u5a74\u513f\u5e94\u5728\u533b\u5e08\u6307\u5bfc\u4e0b\u670d\u7528\u3002\n3.\u611f\u67d3\u6027\u8179\u6cfb\u5982\u80a0\u708e\u3001\u75e2\u75be\u7b49\u75be\u75c5\u5e94\u7acb\u5373\u53bb\u533b\u9662\u5c31\u8bca\u3002\n4.\u5bf9\u5927\u4fbf\u6b21\u6570\u589e\u591a\u53ca\u6c34\u4efd\u4e22\u5931\u660e\u663e\uff0c\u6709\u8131\u6c34\u8868\u73b0\u5e94\u53bb\u533b\u9662\u5c31\u8bca\u3002\n5.\u670d\u836f2\uff5e3\u5929\u75c7\u72b6\u65e0\u7f13\u89e3\uff0c\u5e94\u53bb\u533b\u9662\u5c31\u8bca\u3002\n6.\u5bf9\u672c\u54c1\u8fc7\u654f\u8005\u7981\u7528\uff0c\u8fc7\u654f\u4f53\u8d28\u8005\u614e\u7528\u3002\n7.\u672c\u54c1\u6027\u72b6\u53d1\u751f\u6539\u53d8\u65f6\u7981\u6b62\u4f7f\u7528\u3002\n8.\u513f\u7ae5\u5fc5\u987b\u5728\u6210\u4eba\u76d1\u62a4\u4e0b\u4f7f\u7528\u3002\n9.\u8bf7\u5c06\u672c\u54c1\u653e\u5728\u513f\u7ae5\u4e0d\u80fd\u63a5\u89e6\u7684\u5730\u65b9\u3002\n10.\u5982\u6b63\u5728\u4f7f\u7528\u5176\u4ed6\u836f\u54c1\uff0c\u4f7f\u7528\u672c\u54c1\u524d\u8bf7\u54a8\u8be2\u533b\u5e08\u6216\u836f\u5e08\u3002|attention",
+                    "des": "1.\u5fcc\u8f9b\u8fa3\u3001\u751f\u51b7\u3001\u6cb9\u817b\u53ca\u4e0d\u6613\u6d88\u5316\u7b49\u98df\u7269\u3002\n2.\u5a74\u513f\u5e94\u5728\u533b\u5e08\u6307\u5bfc\u4e0b\u670d\u7528\u3002\n3.\u611f\u67d3\u6027\u8179\u6cfb\u5982\u80a0\u708e\u3001\u75e2\u75be\u7b49\u75be\u75c5\u5e94\u7acb\u5373\u53bb\u533b\u9662\u5c31\u8bca\u3002\n4.\u5bf9\u5927\u4fbf\u6b21\u6570\u589e\u591a\u53ca\u6c34\u4efd\u4e22\u5931\u660e\u663e\uff0c\u6709\u8131\u6c34\u8868\u73b0\u5e94\u53bb\u533b\u9662\u5c31\u8bca\u3002\n5.\u670d\u836f2\uff5e3\u5929\u75c7\u72b6\u65e0\u7f13\u89e3\uff0c\u5e94\u53bb\u533b\u9662\u5c31\u8bca\u3002\n6.\u5bf9\u672c\u54c1\u8fc7\u654f\u8005\u7981\u7528\uff0c\u8fc7\u654f\u4f53\u8d28\u8005\u614e\u7528\u3002\n7.\u672c\u54c1\u6027\u72b6\u53d1\u751f\u6539\u53d8\u65f6\u7981\u6b62\u4f7f\u7528\u3002\n8.\u513f\u7ae5\u5fc5\u987b\u5728\u6210\u4eba\u76d1\u62a4\u4e0b\u4f7f\u7528\u3002\n9.\u8bf7\u5c06\u672c\u54c1\u653e\u5728\u513f\u7ae5\u4e0d\u80fd\u63a5\u89e6\u7684\u5730\u65b9\u3002\n10.\u5982\u6b63\u5728\u4f7f\u7528\u5176\u4ed6\u836f\u54c1\uff0c\u4f7f\u7528\u672c\u54c1\u524d\u8bf7\u54a8\u8be2\u533b\u5e08\u6216\u836f\u5e08\u3002",
+                    "category": 4,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u7761\u7720\u969c\u788d|disease",
+                    "des": "\u7761\u7720\u969c\u788d",
+                    "category": 3,
+                    "symbolSize": 70
+                },
+                {
+                    "name": "\u8001\u5e74\u4eba\u7761\u7720\u969c\u788d|disease",
+                    "des": "\u8001\u5e74\u4eba\u7761\u7720\u969c\u788d",
+                    "category": 3,
+                    "symbolSize": 70
+                }
+            ],
+            "categories": [
+                {},
+                {
+                    "name": "use"
+                },
+                {
+                    "name": "uneffect"
+                },
+                {
+                    "name": "disease"
+                },
+                {
+                    "name": "attention"
+                },
+                {
+                    "name": "forbid"
+                },
+                {
+                    "name": "drug"
+                }
+            ],
+            "edgeLabel": {
+                "show": true,
+                "margin": 8,
+                "formatter": function (x) {return x.data.name;}
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": [
+                4,
+                10
+            ],
+            "links": [
+                {
+                    "source": "\u5a74\u513f\u5065\u813e\u9897\u7c92|drug",
+                    "target": "use|centernode",
+                    "name": "use"
+                },
+                {
+                    "source": "\u5a74\u513f\u5065\u813e\u9897\u7c92|drug",
+                    "target": "uneffect|centernode",
+                    "name": "uneffect"
+                },
+                {
+                    "source": "\u5a74\u513f\u5065\u813e\u9897\u7c92|drug",
+                    "target": "attention|centernode",
+                    "name": "attention"
+                },
+                {
+                    "source": "\u5a74\u513f\u5065\u813e\u9897\u7c92|drug",
+                    "target": "forbid|centernode",
+                    "name": "forbid"
+                },
+                {
+                    "source": "\u5a74\u513f\u5065\u813e\u9897\u7c92|drug",
+                    "target": "cure_disease|centernode",
+                    "name": "cure_disease"
+                },
+                {
+                    "source": "use|centernode",
+                    "target": "\u53e3\u670d\u30021\u5c81\u4ee5\u4e0b\u6bcf\u6b211\u514b\uff0c1\u5c81\u81f33\u5c81\u6bcf\u6b214\u514b\uff0c4\u5c81\u81f37\u5c81\u6bcf\u6b218\u514b\uff0c\u6bcf\u65e52\u6b21\u3002|use",
+                    "name": " "
+                },
+                {
+                    "source": "uneffect|centernode",
+                    "target": "\u5c1a\u4e0d\u660e\u786e\u3002|uneffect",
+                    "name": " "
+                },
+                {
+                    "source": "forbid|centernode",
+                    "target": "\u7cd6\u5c3f\u75c5\u60a3\u513f\u7981\u670d\u3002|forbid",
+                    "name": " "
+                },
+                {
+                    "source": "attention|centernode",
+                    "target": "1.\u5fcc\u8f9b\u8fa3\u3001\u751f\u51b7\u3001\u6cb9\u817b\u53ca\u4e0d\u6613\u6d88\u5316\u7b49\u98df\u7269\u3002\n2.\u5a74\u513f\u5e94\u5728\u533b\u5e08\u6307\u5bfc\u4e0b\u670d\u7528\u3002\n3.\u611f\u67d3\u6027\u8179\u6cfb\u5982\u80a0\u708e\u3001\u75e2\u75be\u7b49\u75be\u75c5\u5e94\u7acb\u5373\u53bb\u533b\u9662\u5c31\u8bca\u3002\n4.\u5bf9\u5927\u4fbf\u6b21\u6570\u589e\u591a\u53ca\u6c34\u4efd\u4e22\u5931\u660e\u663e\uff0c\u6709\u8131\u6c34\u8868\u73b0\u5e94\u53bb\u533b\u9662\u5c31\u8bca\u3002\n5.\u670d\u836f2\uff5e3\u5929\u75c7\u72b6\u65e0\u7f13\u89e3\uff0c\u5e94\u53bb\u533b\u9662\u5c31\u8bca\u3002\n6.\u5bf9\u672c\u54c1\u8fc7\u654f\u8005\u7981\u7528\uff0c\u8fc7\u654f\u4f53\u8d28\u8005\u614e\u7528\u3002\n7.\u672c\u54c1\u6027\u72b6\u53d1\u751f\u6539\u53d8\u65f6\u7981\u6b62\u4f7f\u7528\u3002\n8.\u513f\u7ae5\u5fc5\u987b\u5728\u6210\u4eba\u76d1\u62a4\u4e0b\u4f7f\u7528\u3002\n9.\u8bf7\u5c06\u672c\u54c1\u653e\u5728\u513f\u7ae5\u4e0d\u80fd\u63a5\u89e6\u7684\u5730\u65b9\u3002\n10.\u5982\u6b63\u5728\u4f7f\u7528\u5176\u4ed6\u836f\u54c1\uff0c\u4f7f\u7528\u672c\u54c1\u524d\u8bf7\u54a8\u8be2\u533b\u5e08\u6216\u836f\u5e08\u3002|attention",
+                    "name": " "
+                },
+                {
+                    "source": "cure_disease|centernode",
+                    "target": "\u7761\u7720\u969c\u788d|disease",
+                    "name": " "
+                },
+                {
+                    "source": "cure_disease|centernode",
+                    "target": "\u8001\u5e74\u4eba\u7761\u7720\u969c\u788d|disease",
+                    "name": " "
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "formatter": function (x) { if(x.dataType === 'edge'){return x.data.name;} var strs = x.data.des;  var str = ''; for(var i = 0, s; s = strs[i++];) { if(i==500){str+='...'; break;} str += s; if(!(i % 50)) str += '<br>'; } return str;},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "use",
+                "uneffect",
+                "disease",
+                "attention",
+                "forbid",
+                "drug"
+            ],
+            "selected": {
+                "": true,
+                "use": true,
+                "uneffect": true,
+                "disease": true,
+                "attention": true,
+                "forbid": true,
+                "drug": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u5a74\u513f\u5065\u813e\u9897\u7c92\u76f8\u5173\u77e5\u8bc6\u56fe\u8c31",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_8588d2bfabb34633a133a429d5d1c768.setOption(option_8588d2bfabb34633a133a429d5d1c768);
+    </script>
+</body>
+</html>

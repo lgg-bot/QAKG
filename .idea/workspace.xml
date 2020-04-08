@@ -2,65 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1def2fb4-588e-4769-b91c-0a37c2c5e091" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_kg.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_kg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_echarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_echarts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Disease.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Disease.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Drug.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Drug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Symptom.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Symptom.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dict/disease.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dict/drug.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dict/symptoms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dict/symptoms.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qclassifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/qclassifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render106.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render114.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render115.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render116.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render119.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render128.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render13.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render132.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render138.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render141.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render147.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render15.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render16.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render17.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render18.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render21.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render22.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render23.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render24.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render25.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render26.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render31.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render38.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render40.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render41.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render42.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render47.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render56.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render65.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render67.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render82.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render86.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render87.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render89.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render9.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render90.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render96.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/echarts/render97.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/build_li.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/build_li.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,20 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/create_echarts.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="259" column="23" selection-start-line="259" selection-start-column="23" selection-end-line="259" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build_graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="28" />
+            <state relative-caret-position="353">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="e#11#34#0" expanded="true" />
               </folding>
@@ -95,37 +29,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3294">
-              <caret line="79" column="77" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dict/symptoms.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-581">
-              <caret line="339" column="4" selection-start-line="339" selection-start-column="4" selection-end-line="339" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Disease.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="102" column="77" lean-forward="true" selection-start-line="102" selection-start-column="77" selection-end-line="102" selection-end-column="77" />
+            <state relative-caret-position="9936">
+              <caret line="368" column="2" selection-start-line="368" selection-start-column="2" selection-end-line="368" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -133,8 +40,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/Drug.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="1944">
               <caret line="72" column="57" selection-start-line="72" selection-end-line="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Symptom.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3888">
+              <caret line="144" column="29" lean-forward="true" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Disease.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-53">
+              <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dict/disease.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2781">
+              <caret line="103" column="8" selection-start-line="103" selection-end-line="103" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -142,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dict/drug.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="2781">
               <caret line="103" column="3" selection-start-line="103" selection-start-column="3" selection-end-line="103" selection-end-column="3" />
             </state>
           </provider>
@@ -151,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build_kg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
+            <state relative-caret-position="6183">
               <caret line="232" column="32" selection-start-line="232" selection-start-column="32" selection-end-line="232" selection-end-column="32" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -248,7 +194,6 @@
         <option value="$PROJECT_DIR$/question_parser.py" />
         <option value="$PROJECT_DIR$/answer_search.py" />
         <option value="$PROJECT_DIR$/chatbot_graph.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/qtransfer.py" />
         <option value="$PROJECT_DIR$/qresult.py" />
         <option value="$PROJECT_DIR$/x.py" />
@@ -277,11 +222,12 @@
         <option value="$PROJECT_DIR$/tool/build_li.py" />
         <option value="$PROJECT_DIR$/templates/index1.html" />
         <option value="$PROJECT_DIR$/build_graph.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="336" />
+    <option name="x" value="335" />
     <option name="y" value="470" />
     <option name="width" value="1350" />
     <option name="height" value="645" />
@@ -293,7 +239,27 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="QAKG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QAKG" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QAKG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QAKG" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QAKG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QAKG" type="462c0819:PsiDirectoryNode" />
+              <item name="dict" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,17 +269,17 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\KG\QAKG" />
+      <recent name="E:\KG\QAKG\templates" />
+      <recent name="E:\KG\QAKG\data" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\KG\QAKG\dict" />
       <recent name="E:\KG\QAKG\data" />
       <recent name="E:\KG\QAKG\templates\images" />
       <recent name="E:\KG\QAKG\templates" />
       <recent name="E:\KG\QAKG\tool" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\KG\QAKG" />
-      <recent name="E:\KG\QAKG\templates" />
-      <recent name="E:\KG\QAKG\data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -455,17 +421,26 @@
       <option name="presentableId" value="Default" />
       <updated>1583926241529</updated>
     </task>
+    <task id="LOCAL-00001" summary="扩充了知识图谱">
+      <created>1586014769179</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586014769179</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496875" visible="true" weight="0.22457068" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496875" visible="true" weight="0.22457068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5015674" side_tool="true" weight="0.24966975" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2733711" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24929178" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -478,6 +453,10 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="扩充了知识图谱" />
+    <option name="LAST_COMMIT_MESSAGE" value="扩充了知识图谱" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data/disease/老年期抑郁症.txt">
@@ -593,42 +572,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/echarts/render1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/echarts/render1.html" />
     <entry file="file://$PROJECT_DIR$/data/symptom/低血糖.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/images/ico1.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Symptom.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Disease.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="63" selection-start-line="17" selection-end-line="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../QASystemOnMedicalKG/data/s.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -639,21 +588,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Drug.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dict/disease.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-41" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dict/drug.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/jscode.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -678,21 +612,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/create_echarts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="246" column="43" selection-start-line="246" selection-start-column="43" selection-end-line="246" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2133">
+          <caret line="79" column="77" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/question">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dict/symptoms.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9936">
+          <caret line="368" column="2" selection-start-line="368" selection-start-column="2" selection-end-line="368" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Drug.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1944">
+          <caret line="72" column="57" selection-start-line="72" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/Symptom.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9805" />
+        <state relative-caret-position="3888">
+          <caret line="144" column="29" lean-forward="true" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dict/disease.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2781">
+          <caret line="103" column="8" selection-start-line="103" selection-end-line="103" selection-end-column="8" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dict/drug.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="2781">
           <caret line="103" column="3" selection-start-line="103" selection-start-column="3" selection-end-line="103" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build_kg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="6183">
           <caret line="232" column="32" selection-start-line="232" selection-start-column="32" selection-end-line="232" selection-end-column="32" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -707,62 +692,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dict/symptoms.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-581">
-          <caret line="339" column="4" selection-start-line="339" selection-start-column="4" selection-end-line="339" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dict/disease.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2781">
-          <caret line="103" column="8" selection-start-line="103" selection-end-line="103" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/Disease.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="102" column="77" lean-forward="true" selection-start-line="102" selection-start-column="77" selection-end-line="102" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Drug.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="72" column="57" selection-start-line="72" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3294">
-          <caret line="79" column="77" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        <state relative-caret-position="243">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build_graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="28" />
+        <state relative-caret-position="353">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="e#11#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create_echarts.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="259" column="23" selection-start-line="259" selection-start-column="23" selection-end-line="259" selection-end-column="23" />
+        <state relative-caret-position="-53">
+          <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
